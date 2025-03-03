@@ -4,11 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Categories - Fedora blog</title>
+    <title>Forgejo Theming - Fedora blog</title>
 
     
     
-    <meta name="description" content="" />
+    <meta name="description" content="Customizing the Logo The process of customizing the logo is pretty much simple and straightforward. The logos are stored inside assets/ directory. In order to change the logo,
+Replace the logo.svg with the custom logo (do the same for changing the favicon.svg as well). Run the command in root directory of forgejo/*: make generate-images This process will generate the assets for logo inside the assets/* directory. Keep in mind that changing the logo just by renaming it won&rsquo;t work!" />
     <meta name="author" content="" />
     
 
@@ -52,11 +53,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:32 w:full">
-        <header class="mb:32">
-            <div class="font:40 font:extrabold">Categories</div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">Forgejo Theming</div>
+        <div class="mt:16 f:fade-60">
+            <time>Mar 3, 2025</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
@@ -93,18 +96,25 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"></div></article>
-    <ul>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="http://localhost:1313/posts/forgejo/forgejo-theming/">
-                            <div>Forgejo Theming</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Mar 3, 2025</time></div>
-                    </div>
-                </li>
-    </ul>
-</div>
+"><h1 id="customizing-the-logo">Customizing the Logo</h1>
+<p>The process of customizing the logo is pretty much simple and straightforward. The logos are stored inside <code>assets/</code> directory. In order to change the logo,</p>
+<ol>
+<li>Replace the <code>logo.svg</code> with the custom logo (do the same for changing the <code>favicon.svg</code> as well).</li>
+<li>Run the command in root directory of <code>forgejo/*</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>make generate-images
+</span></span></code></pre></div><p>This process will generate the assets for logo inside the <code>assets/*</code> directory. Keep in mind that changing the logo just by renaming it won&rsquo;t work!</p>
+<blockquote>
+<p><strong>Note:</strong> If you see an error message stating that <code>canvas</code> is not installed in your machine, then install it using <code>npm install canvas</code>.</p>
+</blockquote>
+<h1 id="customizing-the-color-appearance-of-the-theme">Customizing the Color Appearance of the Theme</h1>
+<p>This is not mentioned in the documentation of Forgejo and I found that changing the <code>CSS</code> elements manually will help change the colors, and there&rsquo;s no need to use <code>go templates</code> to inject custom <code>CSS</code> into it.</p>
+<p>Head inside the <code>web_src/css/themes/*</code> directory and this holds the <code>CSS</code> styling elements for the Forgejo&rsquo;s theme. Change the elements manually to suit your needs and then build the docker image.</p>
+<p>Renaming the filenames will break the theme, so make sure to update the changes of the theme names inside <code>modules/settings/ui.go</code> in the <code>Themes:</code> variable.</p>
+<blockquote>
+<p><strong>Note:</strong> Theme names should always starts with <code>theme-*.css</code>. Using a custom name will break the build.</p>
+</blockquote>
+</div></article>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8"></div>
     <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
