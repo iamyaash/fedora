@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://iamyaash.github.org/
 languageCode: en-us
 title: Fedora
 theme: ["PaperMod"]
@@ -7,9 +7,3 @@ params:
   homeInfoParams:
     Title: Hello there 👀!
     Content: This blog serves as a repository for reports, documentation, and updates related to the Fedora Project, including my ongoing contributions and activities within the community.
-
-  socialIcons: # optional
-    - name: "discord"
-      url: "<link>"
-    - name: "<platform 2>"
-      url: "<link2>"
