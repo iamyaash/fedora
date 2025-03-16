@@ -2,7 +2,6 @@ baseURL: https://iamyaash.github.org/
 languageCode: en-us
 title: Fedora
 theme: ["PaperMod"]
-
 params:
   homeInfoParams:
     Title: Hello there 👀!

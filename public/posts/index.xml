@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Fedora</description>
     <generator>Hugo -- 0.126.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Mar 2025 21:45:39 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 12:40:52 +0530</lastBuildDate>
     <atom:link href="https://iamyaash.github.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Fedora Theme in Forgejo</title>
+      <link>https://iamyaash.github.org/posts/forgejo-deployment/new-fedora-theme-forgejo/</link>
+      <pubDate>Sun, 16 Mar 2025 12:40:52 +0530</pubDate>
+      <guid>https://iamyaash.github.org/posts/forgejo-deployment/new-fedora-theme-forgejo/</guid>
+      <description>A new Fedora theme for the Forgejo deployment in Fedora Project</description>
+    </item>
     <item>
       <title>Forgejo Theming</title>
       <link>https://iamyaash.github.org/posts/forgejo/forgejo-theming/</link>
