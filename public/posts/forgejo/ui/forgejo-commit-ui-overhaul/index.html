@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Interactive Forgejo Testing &amp; User Interface Modification Using Go Templates | Fedora</title>
+<meta name="keywords" content="docs, forgejo">
+<meta name="description" content="Interactive Testing We can run a Forgejo instance locally for testing:
+TAGS=&#39;sqlite sqlite_unlock_notify&#39; make watch This will initiate a Forgejo instance locally, but it won&rsquo;t give you the database to store any information. The database setup &amp; initialization must be done manually. In my case, it&rsquo;s my first time interacting with databases on my own, so I will just note down everything for future reference.
+Install &amp; Setup mysql Database Install mysql-server:">
+<meta name="author" content="">
+<link rel="canonical" href="https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iamyaash.github.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iamyaash.github.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iamyaash.github.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://iamyaash.github.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://iamyaash.github.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:url" content="https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/">
+  <meta property="og:site_name" content="Fedora">
+  <meta property="og:title" content="Interactive Forgejo Testing &amp; User Interface Modification Using Go Templates">
+  <meta property="og:description" content="Interactive Testing We can run a Forgejo instance locally for testing:
+TAGS=&#39;sqlite sqlite_unlock_notify&#39; make watch This will initiate a Forgejo instance locally, but it won’t give you the database to store any information. The database setup &amp; initialization must be done manually. In my case, it’s my first time interacting with databases on my own, so I will just note down everything for future reference.
+Install &amp; Setup mysql Database Install mysql-server:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-25T21:42:44+05:30">
+    <meta property="article:modified_time" content="2025-04-25T21:42:44+05:30">
+    <meta property="article:tag" content="Docs">
+    <meta property="article:tag" content="Forgejo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Interactive Forgejo Testing &amp; User Interface Modification Using Go Templates">
+<meta name="twitter:description" content="Interactive Testing We can run a Forgejo instance locally for testing:
+TAGS=&#39;sqlite sqlite_unlock_notify&#39; make watch This will initiate a Forgejo instance locally, but it won&rsquo;t give you the database to store any information. The database setup &amp; initialization must be done manually. In my case, it&rsquo;s my first time interacting with databases on my own, so I will just note down everything for future reference.
+Install &amp; Setup mysql Database Install mysql-server:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://iamyaash.github.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Interactive Forgejo Testing \u0026 User Interface Modification Using Go Templates",
+      "item": "https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Interactive Forgejo Testing \u0026 User Interface Modification Using Go Templates",
+  "name": "Interactive Forgejo Testing \u0026 User Interface Modification Using Go Templates",
+  "description": "Interactive Testing We can run a Forgejo instance locally for testing:\nTAGS=\u0026#39;sqlite sqlite_unlock_notify\u0026#39; make watch This will initiate a Forgejo instance locally, but it won\u0026rsquo;t give you the database to store any information. The database setup \u0026amp; initialization must be done manually. In my case, it\u0026rsquo;s my first time interacting with databases on my own, so I will just note down everything for future reference.\nInstall \u0026amp; Setup mysql Database Install mysql-server:",
+  "keywords": [
+    "docs", "forgejo"
+  ],
+  "articleBody": "Interactive Testing We can run a Forgejo instance locally for testing:\nTAGS='sqlite sqlite_unlock_notify' make watch This will initiate a Forgejo instance locally, but it won’t give you the database to store any information. The database setup \u0026 initialization must be done manually. In my case, it’s my first time interacting with databases on my own, so I will just note down everything for future reference.\nInstall \u0026 Setup mysql Database Install mysql-server:\nsudo dnf install mysql-server Check if it’s enabled \u0026 running: sudo systemctl status mysqld If mysqld is inactive:\nsudo systemctl enable mysqld sudo systemctl start mysqld Run the secure installation:\nsudo mysql_secure_installation Initialize mysqld sudo mysql -u root -p -u username -p password Create the Database and user for Forgejo Create a Database CREATE DATABASE forgejo CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci; Creates a new database named forgejo. CHARACTER SET utf8mb4: Ensures full Unicode support, including emojis and multilingual characters. COLLATE utf8mb4_general_ci: Sets the default text sorting and comparison rules (case-insensitive). Create a User CREATE USER 'forgejouser'@'localhost' IDENTIFIED BY 'strongpass'; Creates a new database user named forgejouser. 'localhost' means the user can only connect from the local machine. IDENTIFIED BY 'strongpass': Sets the password for the user. Grant Privileges GRANT ALL PRIVILEGES ON forgejo.* TO 'forgejouser'@'localhost'; Gives the user full access (read/write/create/delete) to all tables in the forgejo database. Does not affect other databases — it’s scoped to just forgejo. Reload Privileges FLUSH PRIVILEGES; Forces the database to reload the privileges table so the changes take immediate effect. ",
+  "wordCount" : "249",
+  "inLanguage": "en",
+  "datePublished": "2025-04-25T21:42:44+05:30",
+  "dateModified": "2025-04-25T21:42:44+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fedora",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iamyaash.github.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iamyaash.github.org/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Interactive Forgejo Testing &amp; User Interface Modification Using Go Templates
+    </h1>
+    <div class="post-meta"><span title='2025-04-25 21:42:44 +0530 IST'>April 25, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="interactive-testinghttpsforgejoorgdocsnextcontributortestinginteractive-testing-during-development"><a href="https://forgejo.org/docs/next/contributor/testing/#interactive-testing-during-development">Interactive Testing</a><a hidden class="anchor" aria-hidden="true" href="#interactive-testinghttpsforgejoorgdocsnextcontributortestinginteractive-testing-during-development">#</a></h1>
+<p>We can run a Forgejo instance locally for testing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>TAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sqlite sqlite_unlock_notify&#39;</span> make watch
+</span></span></code></pre></div><p>This will initiate a Forgejo instance locally, but it won&rsquo;t give you the database to store any information. The database setup &amp; initialization must be done manually. <em>In my case, it&rsquo;s my first time interacting with databases on my own, so I will just note down everything for future reference</em>.</p>
+<h2 id="install--setup-mysql-database">Install &amp; Setup <code>mysql</code> Database<a hidden class="anchor" aria-hidden="true" href="#install--setup-mysql-database">#</a></h2>
+<p><strong>Install <code>mysql-server</code></strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo dnf install mysql-server
+</span></span></code></pre></div><h3 id="check-if-its-enabled--running">Check if it&rsquo;s enabled &amp; running:<a hidden class="anchor" aria-hidden="true" href="#check-if-its-enabled--running">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl status mysqld
+</span></span></code></pre></div><p><strong>If <code>mysqld</code> is inactive</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl enable mysqld
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl start mysqld
+</span></span></code></pre></div><p><strong>Run the secure installation</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo mysql_secure_installation
+</span></span></code></pre></div><h3 id="initialize-mysqld">Initialize <code>mysqld</code><a hidden class="anchor" aria-hidden="true" href="#initialize-mysqld">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo mysql -u root -p
+</span></span></code></pre></div><ul>
+<li><code>-u</code> username</li>
+<li><code>-p</code> password</li>
+</ul>
+<h3 id="create-the-database-and-user-for-forgejo">Create the Database and user for Forgejo<a hidden class="anchor" aria-hidden="true" href="#create-the-database-and-user-for-forgejo">#</a></h3>
+<ol>
+<li>Create a Database</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>CREATE DATABASE forgejo CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+</span></span></code></pre></div><ul>
+<li><strong>Creates a new database</strong> named <code>forgejo</code>.</li>
+<li><code>CHARACTER SET utf8mb4</code>: Ensures full Unicode support, including emojis and multilingual characters.</li>
+<li><code>COLLATE utf8mb4_general_ci</code>: Sets the default text sorting and comparison rules (case-insensitive).</li>
+</ul>
+<ol start="2">
+<li>Create a User</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>CREATE USER <span style="color:#e6db74">&#39;forgejouser&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span> IDENTIFIED BY <span style="color:#e6db74">&#39;strongpass&#39;</span>;
+</span></span></code></pre></div><ul>
+<li><strong>Creates a new database user</strong> named <code>forgejouser</code>.</li>
+<li><code>'localhost'</code> means the user can only connect from the local machine.</li>
+<li><code>IDENTIFIED BY 'strongpass'</code>: Sets the password for the user.</li>
+</ul>
+<ol start="3">
+<li>Grant Privileges</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>GRANT ALL PRIVILEGES ON forgejo.* TO <span style="color:#e6db74">&#39;forgejouser&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span>;
+</span></span></code></pre></div><ul>
+<li>Gives the user <strong>full access (read/write/create/delete)</strong> to <strong>all tables in the <code>forgejo</code> database</strong>.</li>
+<li>Does <strong>not</strong> affect other databases — it&rsquo;s scoped to just <code>forgejo</code>.</li>
+</ul>
+<ol start="4">
+<li>Reload Privileges</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>FLUSH PRIVILEGES;
+</span></span></code></pre></div><ul>
+<li><strong>Forces the database to reload</strong> the privileges table so the changes take immediate effect.</li>
+</ul>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://iamyaash.github.org/tags/docs/">Docs</a></li>
+      <li><a href="https://iamyaash.github.org/tags/forgejo/">Forgejo</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://iamyaash.github.org/">Fedora</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
