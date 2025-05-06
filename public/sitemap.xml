@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://iamyaash.github.org/</loc>
     <lastmod>2025-05-06T21:33:31+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/forgejo/ui/commit-ui-revamp/</loc>
+    <loc>https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/</loc>
     <lastmod>2025-05-06T21:33:31+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://iamyaash.github.org/posts/</loc>
     <lastmod>2025-05-06T21:33:31+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docs/</loc>
+    <loc>https://iamyaash.github.org/tags/docs/</loc>
     <lastmod>2025-04-25T21:42:44+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/forgejo/</loc>
+    <loc>https://iamyaash.github.org/tags/forgejo/</loc>
     <lastmod>2025-04-25T21:42:44+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/forgejo/ui/forgejo-interactive-testing/</loc>
+    <loc>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</loc>
     <lastmod>2025-04-25T21:42:44+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://iamyaash.github.org/tags/</loc>
     <lastmod>2025-04-25T21:42:44+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/forgejo/theme/new-fedora-theme-forgejo/</loc>
+    <loc>https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/</loc>
     <lastmod>2025-03-16T12:40:52+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/forgejo/theme/forgejo-theming/</loc>
+    <loc>https://iamyaash.github.org/posts/forgejo/theme/forgejo-theming/</loc>
     <lastmod>2025-03-03T21:45:39+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://iamyaash.github.org/categories/</loc>
   </url>
 </urlset>

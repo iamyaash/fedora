@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Forgejo Commit Table UI Overhaul | Fedora</title>
 <meta name="keywords" content="">
 <meta name="description" content="Providing an overview of how the commit table UI overhaul was made (early design stage)">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/forgejo/ui/commit-ui-revamp/">
+<link rel="canonical" href="https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://iamyaash.github.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iamyaash.github.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iamyaash.github.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://iamyaash.github.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://iamyaash.github.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/forgejo/ui/commit-ui-revamp/">
+<link rel="alternate" hreflang="en" href="https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,6 +56,71 @@
 
     </style>
 </noscript>
+  
+
+<meta property="og:url" content="https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/">
+  <meta property="og:site_name" content="Fedora">
+  <meta property="og:title" content="Forgejo Commit Table UI Overhaul">
+  <meta property="og:description" content="Providing an overview of how the commit table UI overhaul was made (early design stage)">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-06T21:33:31+05:30">
+    <meta property="article:modified_time" content="2025-05-06T21:33:31+05:30">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Forgejo Commit Table UI Overhaul">
+<meta name="twitter:description" content="Providing an overview of how the commit table UI overhaul was made (early design stage)">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://iamyaash.github.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Forgejo Commit Table UI Overhaul",
+      "item": "https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Forgejo Commit Table UI Overhaul",
+  "name": "Forgejo Commit Table UI Overhaul",
+  "description": "Providing an overview of how the commit table UI overhaul was made (early design stage)",
+  "keywords": [
+    
+  ],
+  "articleBody": "Why the UI Change? Forgejo uses an older commit table layout that may be familiar to developers but can be confusing for general users coming from platforms like GitHub and GitLab. Issue reference.\nInterestingly, Pagure also uses this same outdated layout. In these older designs, the only way to see when a commit was made is by hovering over the date section to reveal the date and time in a tooltip(popup-overlay). The goal of the new design is to improve clarity by grouping commits by date directly in the interface, eliminating the need to hover just to understand when changes were made. Since we are moving to our new git forge, it’s better thing have new feature and UI overhaul than sticking to the old way.\nWe’re moving from Pagure to Forgejo, and both use the old commit table layout. This is a good chance to update it. Grouping commits by date will make it easier to read and give a better experience, especially for Fedora use cases\nPagure’s Old Table Layout: Forgejo’s Current Table Layout: Forgejo’s Early Stage Design Layout (Proposed): How I Made the UI Change? It was quite challenging at first, but I became more comfortable as I continued working on the codebase. Forgejo uses Tailwind CSS for styling, with some parts still using Semantic UI, and it relies on Go templates for rendering. I haven’t touched much of the backend, but on the frontend, the logic is tied to variables passed into templates, which we can use in various fields as needed.\nI was basically learning as I went, so the journey was a bit unusual (and maybe even a little messy 🤷🏻‍♂️).\nIdentifying the Source File:\nTo start working on the commit table, the first step was identifying the source file responsible for rendering it. I did this by using the browser’s developer tools to inspect the HTML elements, checking for specific class, and then searching those class names in the codebase. That usually points you to the right file, or at least something close to it—and from there, you can trace your way to the exact source.\nA Bit of Learning, A Bit of Researching \u0026 a Lot of Experimentation:\nI don’t know the Go programming language well, and I haven’t worked on a large project like Forgejo before, so I wasn’t sure how to approach making a UI change.\nTo get started, I began learning Go to build a foundational understanding of how to write Go code in an Go way. I primarily used Exercism to learn the basics (and I’m still learning). I’m not someone who learns the best by just reading, rather I understand things better by working on them.\nSo, I started experimenting with the build to see what would happen if I changed certain things. It’s mostly trial and error. I do know some CSS, which helped me understand parts of the UI.\nEventually, I hit a point where I couldn’t make much more progress through experimentation alone. That’s when I started doing more research. Since Forgejo doesn’t have extensive documentation (idk, mayb I was not able to find that 🤷🏻‍♂️), I referred to Gitea’s documentation instead.\nThe Logic of How I Implemented the UI Change?\nI didn’t build everything from scratch. Most of the changes were made by modifying the existing source code, and I referenced a few parts from other sources as well.\nLooping Through Commits (already implemented in the original source)\nThe loop gathers information like who made the commit, when it was made, and other related details. I added a new section to group commits by date, which triggers for each unique date. Grouping Commits by Date\nIf the current commit’s date is different from the previous one: It closes the previous date group. Then it starts a new section with a label like “Mon, 06 May 2024” (this label is customizable). Layout and Styling\nThis part took the most time since it was my first experience working with Tailwind CSS, so there was a lot of trial and error.\nI added borders to each commit to separate them visually. Ensured layout spacing for each section to prevent content overflow. Some elements are currently hard-coded, but I plan to clean them up as I get more comfortable with Tailwind. Code (some important parts) This part checks if the current commit’s date is different from the previous one. If so, it closes the previous group and starts a new date section. \u003cdiv class=\"ui timeline-container tw-relative tw-ml-4 tw-mt-2\"\u003e {{$commitRepoLink := $.RepoLink}}{{if $.CommitRepoLink}}{{$commitRepoLink = $.CommitRepoLink}}{{end}} {{$prevDate := \"\"}} {{range .Commits}} {{$commitTime := .Committer.When}} {{if not $commitTime}}{{$commitTime = .Author.When}}{{end}} {{$commitDate := $commitTime.Format \"2006-01-02\"}} {{if ne $commitDate $prevDate}} {{if ne $prevDate \"\"}}\u003c/div\u003e{{end}} \u003c!-- close previous group --\u003e Each commit is rendered inside a rounded, bordered box with padding and shadow for separation (needs refinement tho). \u003cdiv class=\"commit-list tw-shadow-sm tw-border tw-rounded-lg tw-p-4 tw-mb-2\"\u003e \u003c!-- treated like table, but refactored as flex layout + need some adjustments, might overflow --\u003e \u003cdiv class=\"tw-flex tw-justify-between tw-items-center tw-gap-4\"\u003e \u003cdiv class=\"author\"\u003e \u003cdiv class=\"tw-flex\"\u003e {{$userName := .Author.Name}} ",
+  "wordCount" : "840",
+  "inLanguage": "en",
+  "datePublished": "2025-05-06T21:33:31+05:30",
+  "dateModified": "2025-05-06T21:33:31+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fedora",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iamyaash.github.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +138,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
+            <a href="https://iamyaash.github.org/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -120,9 +185,9 @@
 <p><strong>Pagure&rsquo;s Old Table Layout</strong>:
 <img alt="pagure-old-commit-table" loading="lazy" src="https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/pagure-old.png">
 <strong>Forgejo&rsquo;s Current Table Layout</strong>:
-<img alt="forjejo-current-commit-table" loading="lazy" src="https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/forjejo-current.png">
+<img alt="forjejo-current-commit-table" loading="lazy" src="https://iamyaash.github.io/imgfedora/posts/forgejo/ui/commit-ui-revamp/forjego-current.png">
 <strong>Forgejo&rsquo;s Early Stage Design Layout</strong> (<em>Proposed</em>):
-<img alt="forjejo-new-commit-table" loading="lazy" src="https://iamyaash.github.io/fedora/posts/forgejo/ui/img/redesign-forgejo.png"></p>
+<img alt="forjejo-new-commit-table" loading="lazy" src="https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/redesign-forgejo.png"></p>
 <h1 id="how-i-made-the-ui-change">How I Made the UI Change?<a hidden class="anchor" aria-hidden="true" href="#how-i-made-the-ui-change">#</a></h1>
 <p>It was quite challenging at first, but I became more comfortable as I continued working on the codebase. Forgejo uses <code>Tailwind CSS</code> for styling, with some parts still using <code>Semantic UI</code>, and it relies on <code>Go templates</code> for rendering. I haven’t touched much of the backend, but on the frontend, the logic is tied to variables passed into <code>templates</code>, which we can use in various fields as needed.</p>
 <p>I was basically learning as I went, so the journey was a bit unusual (<em>and maybe even a little messy</em> 🤷🏻‍♂️).</p>
@@ -198,7 +263,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Fedora</a></span> · 
+        <span>&copy; 2025 <a href="https://iamyaash.github.org/">Fedora</a></span> · 
 
     <span>
         Powered by

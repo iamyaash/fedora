@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>New Fedora Theme in Forgejo | Fedora</title>
 <meta name="keywords" content="">
 <meta name="description" content="A new Fedora theme for the Forgejo deployment in Fedora Project">
 <meta name="author" content="Yashwanth Rathakrishnan">
-<link rel="canonical" href="http://localhost:1313/posts/forgejo/theme/new-fedora-theme-forgejo/">
+<link rel="canonical" href="https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://iamyaash.github.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iamyaash.github.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iamyaash.github.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://iamyaash.github.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://iamyaash.github.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/forgejo/theme/new-fedora-theme-forgejo/">
+<link rel="alternate" hreflang="en" href="https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,6 +56,77 @@
 
     </style>
 </noscript>
+  
+
+<meta property="og:url" content="https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/">
+  <meta property="og:site_name" content="Fedora">
+  <meta property="og:title" content="New Fedora Theme in Forgejo">
+  <meta property="og:description" content="A new Fedora theme for the Forgejo deployment in Fedora Project">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-16T12:40:52+05:30">
+    <meta property="article:modified_time" content="2025-03-16T12:40:52+05:30">
+    <meta property="og:image" content="https://iamyaash.github.org/posts/forgejo/theme/img/forgejo-fedora-theme.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://iamyaash.github.org/posts/forgejo/theme/img/forgejo-fedora-theme.png">
+<meta name="twitter:title" content="New Fedora Theme in Forgejo">
+<meta name="twitter:description" content="A new Fedora theme for the Forgejo deployment in Fedora Project">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://iamyaash.github.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "New Fedora Theme in Forgejo",
+      "item": "https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "New Fedora Theme in Forgejo",
+  "name": "New Fedora Theme in Forgejo",
+  "description": "A new Fedora theme for the Forgejo deployment in Fedora Project",
+  "keywords": [
+    
+  ],
+  "articleBody": "Forgejo Deployment With New Fedora Theme! On the 14th March, 2025 the new Fedora theme I was working on was deployed to the staging environment. It feels amazing to know that my contributions will be used by thousands of people! I started working on this theme in mid-February, and throughout the process, I connected with and learned from many people.\nSince I’m still relatively new to working on large, long-term projects, I took my time researching and approached everything step by step. I’ve already shared how I made the theme changes, that it was fairly straightforward, but I had to go through the documentation and sometimes figure things out on my own.\nOne thing I noticed is that Forgejo’s documentation doesn’t have a guide for changing the theme’s appearance. I had to do a lot of digging and manually modify the CSS elements. My main goal was to ensure the theming was done in a way that makes future maintenance easy, rather than relying on tedious manual fixes. But yeah, the manual way seems more maintainable.\nHow Did I Made The Theme Changes? Logo \u0026 Favicon\nUsually, it’s not possible to get your hands on the “Fedora” logo, so I had to send an email to logo@fedoraproject.org to receive the logo. Then, I replaced the Forgejo logo.svg \u0026 favicon.svg in /assets/* with Fedora logo. (i.e, moved the Fedora logo inside, copied two of them and changed the name to logo.svg \u0026 favicon.svg). Executing a command in the parent directory of forgejo/ which would generate the assets to the respective places: make generate-images Note: Sometimes it will result in error, by staging canvas is not installed, so install canvas package just in case the error shows up.\nTheme Appearance\nForgejo uses tailwind css for styling the frontend and it uses template module from Go lang for rendering the UI assets. There isn’t any documentation mentioned about changing the theme colors, so I had to dig some things on my own to find a way to change the theme colors with easy-maintainance in mind! I found that the theme related files are stored under /web_src/css/themes/*. Then I made some research on the Fedora’s brand theme and used those colors pick colors for each element, I did mess up bringing the same color on different element, so I took my time and chose each color with precision. At last the I made changes to Light \u0026 Dark theme, but I feel that only light theme is ready and dark theme could use some refinement. So I’m still working on the dark theme, but the light theme is merged! Font Changes\nThis is straightforward, that changing a few elements in /web_src/css/base.css would do it. Overall, I changed the only font for English to “Inter” and also root font as well in base.css. - --fonts-proportional: -apple-system, \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial; + --fonts-proportional: \"Inter\", sans-serif !important; :root * { - --fonts-regular: var(--fonts-override, var(--fonts-proportional)), \"Noto Sans\", \"Liberation Sans\", sans-serif, var(--fonts-emoji); + --fonts-regular: var(--fonts-override, var(--fonts-proportional)), \"Inter\", sans-serif, var(--fonts-emoji); } Things I Stumbled Upon When Working on Forgejo Themeing While making the theme changes,\nI encountered a warning when building the image. It was a really simple fix, but my open-source enthusiastic mindset kicked in, and I decided to contribute beyond just my theme work. So, I raised a PR in forgejo/forgejo (Forgejo Official) and it was reviewed and merged ✅. I also found an issue when generating custom logo.svg \u0026 favicon.svg resulted in an error. After some debugging, I realized that installing canvas package would fix it. I raised an issue for that for clarification so it’s under review, let’s see how it goes! Overall, I feel super excited \u0026 proud to be working on open-source projects and making meaningful contributions, not just for recognition, but because I genuinely enjoy it 😌.\n",
+  "wordCount" : "637",
+  "inLanguage": "en",
+  "image":"https://iamyaash.github.org/posts/forgejo/theme/img/forgejo-fedora-theme.png","datePublished": "2025-03-16T12:40:52+05:30",
+  "dateModified": "2025-03-16T12:40:52+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "Yashwanth Rathakrishnan"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fedora",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iamyaash.github.org/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +144,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
+            <a href="https://iamyaash.github.org/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -114,7 +185,7 @@
 </div>
   </header> 
 <figure class="entry-cover">
-        <img loading="eager" src="http://localhost:1313/posts/forgejo/theme/img/forgejo-fedora-theme.png" alt="forgejo-fedoraproject staging environment">
+        <img loading="eager" src="https://iamyaash.github.org/posts/forgejo/theme/img/forgejo-fedora-theme.png" alt="forgejo-fedoraproject staging environment">
         
 </figure>
   <div class="post-content"><h1 id="forgejo-deployment-with-new-fedora-theme">Forgejo Deployment With New Fedora Theme!<a hidden class="anchor" aria-hidden="true" href="#forgejo-deployment-with-new-fedora-theme">#</a></h1>
@@ -180,7 +251,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Fedora</a></span> · 
+        <span>&copy; 2025 <a href="https://iamyaash.github.org/">Fedora</a></span> · 
 
     <span>
         Powered by

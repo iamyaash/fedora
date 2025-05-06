@@ -18,9 +18,9 @@ We're moving from **Pagure to Forgejo**, and both use the old commit table layou
 **Pagure's Old Table Layout**:
 ![pagure-old-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/pagure-old.png)
 **Forgejo's Current Table Layout**:
-![forjejo-current-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/forjejo-current.png)
+![forjejo-current-commit-table](https://iamyaash.github.io/imgfedora/posts/forgejo/ui/commit-ui-revamp/forjego-current.png)
 **Forgejo's Early Stage Design Layout** (_Proposed_):
-![forjejo-new-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/img/redesign-forgejo.png)
+![forjejo-new-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/redesign-forgejo.png)
 
 # How I Made the UI Change?
 
