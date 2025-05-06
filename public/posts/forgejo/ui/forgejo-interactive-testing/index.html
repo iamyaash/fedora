@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Interactive Forgejo Testing | Fedora</title>
 <meta name="keywords" content="docs, forgejo">
 <meta name="description" content="Summary of how to setup an interactive Forgejo testing environment to see if your changes work!">
 <meta name="author" content="">
-<link rel="canonical" href="https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/">
+<link rel="canonical" href="http://localhost:1313/posts/forgejo/ui/forgejo-interactive-testing/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://iamyaash.github.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://iamyaash.github.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://iamyaash.github.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://iamyaash.github.org/apple-touch-icon.png">
-<link rel="mask-icon" href="https://iamyaash.github.org/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/forgejo/ui/forgejo-interactive-testing/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,73 +56,6 @@
 
     </style>
 </noscript>
-  
-
-<meta property="og:url" content="https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/">
-  <meta property="og:site_name" content="Fedora">
-  <meta property="og:title" content="Interactive Forgejo Testing">
-  <meta property="og:description" content="Summary of how to setup an interactive Forgejo testing environment to see if your changes work!">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-04-25T21:42:44+05:30">
-    <meta property="article:modified_time" content="2025-04-25T21:42:44+05:30">
-    <meta property="article:tag" content="Docs">
-    <meta property="article:tag" content="Forgejo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Interactive Forgejo Testing">
-<meta name="twitter:description" content="Summary of how to setup an interactive Forgejo testing environment to see if your changes work!">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://iamyaash.github.org/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Interactive Forgejo Testing",
-      "item": "https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Interactive Forgejo Testing",
-  "name": "Interactive Forgejo Testing",
-  "description": "Summary of how to setup an interactive Forgejo testing environment to see if your changes work!",
-  "keywords": [
-    "docs", "forgejo"
-  ],
-  "articleBody": "Interactive Testing We can run a Forgejo instance locally for testing:\nTAGS='sqlite sqlite_unlock_notify' make watch This will initiate a Forgejo instance locally, but it won’t give you the database to store any information. The database setup \u0026 initialization must be done manually. In my case, it’s my first time interacting with databases on my own, so I will just note down everything for future reference.\nInstall \u0026 Setup mysql Database Install mysql-server:\nsudo dnf install mysql-server Check if it’s enabled \u0026 running: sudo systemctl status mysqld If mysqld is inactive:\nsudo systemctl enable mysqld sudo systemctl start mysqld Run the secure installation:\nsudo mysql_secure_installation Initialize mysqld sudo mysql -u root -p -u username -p password Create the Database and user for Forgejo Create a Database CREATE DATABASE forgejo CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci; Creates a new database named forgejo. CHARACTER SET utf8mb4: Ensures full Unicode support, including emojis and multilingual characters. COLLATE utf8mb4_general_ci: Sets the default text sorting and comparison rules (case-insensitive). Create a User CREATE USER 'forgejouser'@'localhost' IDENTIFIED BY 'strongpass'; Creates a new database user named forgejouser. 'localhost' means the user can only connect from the local machine. IDENTIFIED BY 'strongpass': Sets the password for the user. Grant Privileges GRANT ALL PRIVILEGES ON forgejo.* TO 'forgejouser'@'localhost'; Gives the user full access (read/write/create/delete) to all tables in the forgejo database. Does not affect other databases — it’s scoped to just forgejo. Reload Privileges FLUSH PRIVILEGES; Forces the database to reload the privileges table so the changes take immediate effect. Initial Database Configuration in Forgejo Ensure that your database is properly configured using MySQL (or any compatible local database you have set up).\nDatabase Settings\nSetting Value Database Type MySQL Host localhost Username forgejouser Password strongpass Database Name forgejo Note: These values may vary depending on your specific database configuration.\n",
-  "wordCount" : "299",
-  "inLanguage": "en",
-  "datePublished": "2025-04-25T21:42:44+05:30",
-  "dateModified": "2025-04-25T21:42:44+05:30",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Fedora",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://iamyaash.github.org/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -140,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iamyaash.github.org/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -276,15 +209,15 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://iamyaash.github.org/tags/docs/">Docs</a></li>
-      <li><a href="https://iamyaash.github.org/tags/forgejo/">Forgejo</a></li>
+      <li><a href="http://localhost:1313/tags/docs/">Docs</a></li>
+      <li><a href="http://localhost:1313/tags/forgejo/">Forgejo</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://iamyaash.github.org/">Fedora</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Fedora</a></span> · 
 
     <span>
         Powered by

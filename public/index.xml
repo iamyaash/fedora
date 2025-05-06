@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fedora</title>
-    <link>https://iamyaash.github.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Fedora</description>
     <generator>Hugo -- 0.126.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Apr 2025 21:42:44 +0530</lastBuildDate>
-    <atom:link href="https://iamyaash.github.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 May 2025 21:33:31 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Forgejo Commit Table UI Overhaul</title>
+      <link>http://localhost:1313/posts/forgejo/ui/commit-ui-revamp/</link>
+      <pubDate>Tue, 06 May 2025 21:33:31 +0530</pubDate>
+      <guid>http://localhost:1313/posts/forgejo/ui/commit-ui-revamp/</guid>
+      <description>Providing an overview of how the commit table UI overhaul was made (early design stage)</description>
+    </item>
     <item>
       <title>Interactive Forgejo Testing</title>
-      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</link>
+      <link>http://localhost:1313/posts/forgejo/ui/forgejo-interactive-testing/</link>
       <pubDate>Fri, 25 Apr 2025 21:42:44 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</guid>
+      <guid>http://localhost:1313/posts/forgejo/ui/forgejo-interactive-testing/</guid>
       <description>Summary of how to setup an interactive Forgejo testing environment to see if your changes work!</description>
     </item>
     <item>
       <title>New Fedora Theme in Forgejo</title>
-      <link>https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/</link>
+      <link>http://localhost:1313/posts/forgejo/theme/new-fedora-theme-forgejo/</link>
       <pubDate>Sun, 16 Mar 2025 12:40:52 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/</guid>
+      <guid>http://localhost:1313/posts/forgejo/theme/new-fedora-theme-forgejo/</guid>
       <description>A new Fedora theme for the Forgejo deployment in Fedora Project</description>
     </item>
     <item>
       <title>Forgejo Theming</title>
-      <link>https://iamyaash.github.org/posts/forgejo/theme/forgejo-theming/</link>
+      <link>http://localhost:1313/posts/forgejo/theme/forgejo-theming/</link>
       <pubDate>Mon, 03 Mar 2025 21:45:39 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/theme/forgejo-theming/</guid>
+      <guid>http://localhost:1313/posts/forgejo/theme/forgejo-theming/</guid>
       <description>Customizing the Logo The process of customizing the logo is pretty much simple and straightforward. The logos are stored inside assets/ directory. In order to change the logo,
 Replace the logo.svg with the custom logo (do the same for changing the favicon.svg as well). Run the command in root directory of forgejo/*: make generate-images This process will generate the assets for logo inside the assets/* directory. Keep in mind that changing the logo just by renaming it won&amp;rsquo;t work!</description>
     </item>
