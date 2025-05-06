@@ -18,7 +18,7 @@ We're moving from **Pagure to Forgejo**, and both use the old commit table layou
 **Pagure's Old Table Layout**:
 ![pagure-old-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/pagure-old.png)
 **Forgejo's Current Table Layout**:
-![forjejo-current-commit-table](https://iamyaash.github.io/imgfedora/posts/forgejo/ui/commit-ui-revamp/forjego-current.png)
+![forjejo-current-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/forgejo-current.png)
 **Forgejo's Early Stage Design Layout** (_Proposed_):
 ![forjejo-new-commit-table](https://iamyaash.github.io/fedora/posts/forgejo/ui/commit-ui-revamp/redesign-forgejo.png)
 
@@ -64,7 +64,7 @@ I didn’t build everything from scratch. Most of the changes were made by modif
     - Ensured layout spacing for each section to prevent content overflow.
     - Some elements are currently hard-coded, but I plan to clean them up as I get more comfortable with Tailwind.
 
-## Code (_some important parts_)
+## Code (_couple of important parts_)
 
 1. This part checks if the current commit’s date is different from the previous one. If so, it closes the previous group and starts a new date section.
 ```go 
