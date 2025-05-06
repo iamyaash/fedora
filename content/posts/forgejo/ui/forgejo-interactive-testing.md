@@ -1,8 +1,9 @@
 +++
-title = 'Interactive Forgejo Testing & User Interface Modification Using Go Templates'
+title = 'Interactive Forgejo Testing'
 date = 2025-04-25T21:42:44+05:30
 draft = false
 tags = ["docs", "forgejo"]
+summary = "Summary of how to setup an interactive Forgejo testing environment to see if your changes work!"
 +++
 
 # [Interactive Testing](https://forgejo.org/docs/next/contributor/testing/#interactive-testing-during-development)
@@ -81,5 +82,17 @@ FLUSH PRIVILEGES;
 
 * **Forces the database to reload** the privileges table so the changes take immediate effect.
 
----
+### Initial Database Configuration in Forgejo
+Ensure that your database is properly configured using `MySQL` (_or any compatible local database you have set up_).
 
+**Database Settings**
+
+| **Setting**   | **Value**     |
+| ------------- | ------------- |
+| Database Type | `MySQL`       |
+| Host          | `localhost`   |
+| Username      | `forgejouser` |
+| Password      | `strongpass`  |
+| Database Name | `forgejo`     |
+
+> **Note:** These values may vary depending on your specific database configuration.

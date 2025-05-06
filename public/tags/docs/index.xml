@@ -9,13 +9,11 @@
     <lastBuildDate>Fri, 25 Apr 2025 21:42:44 +0530</lastBuildDate>
     <atom:link href="https://iamyaash.github.org/tags/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Interactive Forgejo Testing &amp; User Interface Modification Using Go Templates</title>
-      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/</link>
+      <title>Interactive Forgejo Testing</title>
+      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</link>
       <pubDate>Fri, 25 Apr 2025 21:42:44 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-commit-ui-overhaul/</guid>
-      <description>Interactive Testing We can run a Forgejo instance locally for testing:
-TAGS=&amp;#39;sqlite sqlite_unlock_notify&amp;#39; make watch This will initiate a Forgejo instance locally, but it won&amp;rsquo;t give you the database to store any information. The database setup &amp;amp; initialization must be done manually. In my case, it&amp;rsquo;s my first time interacting with databases on my own, so I will just note down everything for future reference.
-Install &amp;amp; Setup mysql Database Install mysql-server:</description>
+      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</guid>
+      <description>Summary of how to setup an interactive Forgejo testing environment to see if your changes work!</description>
     </item>
   </channel>
 </rss>
