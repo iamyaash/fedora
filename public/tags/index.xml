@@ -6,20 +6,27 @@
     <description>Recent content in Tags on Fedora</description>
     <generator>Hugo -- 0.126.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Apr 2025 21:42:44 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 10:31:57 +0530</lastBuildDate>
     <atom:link href="https://iamyaash.github.org/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Docs</title>
-      <link>https://iamyaash.github.org/tags/docs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://iamyaash.github.org/tags/docs/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Forgejo</title>
       <link>https://iamyaash.github.org/tags/forgejo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://iamyaash.github.org/tags/forgejo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wrap</title>
+      <link>https://iamyaash.github.org/tags/wrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://iamyaash.github.org/tags/wrap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docs</title>
+      <link>https://iamyaash.github.org/tags/docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://iamyaash.github.org/tags/docs/</guid>
       <description></description>
     </item>
   </channel>

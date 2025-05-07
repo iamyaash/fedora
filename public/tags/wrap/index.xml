@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Forgejo on Fedora</title>
-    <link>https://iamyaash.github.org/tags/forgejo/</link>
-    <description>Recent content in Forgejo on Fedora</description>
+    <title>Wrap on Fedora</title>
+    <link>https://iamyaash.github.org/tags/wrap/</link>
+    <description>Recent content in Wrap on Fedora</description>
     <generator>Hugo -- 0.126.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 May 2025 10:31:57 +0530</lastBuildDate>
-    <atom:link href="https://iamyaash.github.org/tags/forgejo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iamyaash.github.org/tags/wrap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forgejo UI Changes for Fedora Project</title>
       <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/</link>
       <pubDate>Wed, 07 May 2025 10:31:57 +0530</pubDate>
       <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/</guid>
       <description>I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.</description>
-    </item>
-    <item>
-      <title>Interactive Forgejo Testing</title>
-      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</link>
-      <pubDate>Fri, 25 Apr 2025 21:42:44 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</guid>
-      <description>Summary of how to setup an interactive Forgejo testing environment to see if your changes work!</description>
     </item>
   </channel>
 </rss>

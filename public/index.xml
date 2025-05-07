@@ -6,8 +6,15 @@
     <description>Recent content on Fedora</description>
     <generator>Hugo -- 0.126.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 May 2025 21:33:31 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 10:31:57 +0530</lastBuildDate>
     <atom:link href="https://iamyaash.github.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Forgejo UI Changes for Fedora Project</title>
+      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/</link>
+      <pubDate>Wed, 07 May 2025 10:31:57 +0530</pubDate>
+      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/</guid>
+      <description>I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.</description>
+    </item>
     <item>
       <title>Forgejo Commit Table UI Overhaul</title>
       <link>https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/</link>
