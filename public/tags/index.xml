@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Fedora</title>
-    <link>https://iamyaash.github.org/tags/</link>
+    <link>http://localhost:41509/tags/</link>
     <description>Recent content in Tags on Fedora</description>
-    <generator>Hugo -- 0.126.2</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 May 2025 10:31:57 +0530</lastBuildDate>
-    <atom:link href="https://iamyaash.github.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:41509/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forgejo</title>
-      <link>https://iamyaash.github.org/tags/forgejo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://iamyaash.github.org/tags/forgejo/</guid>
+      <link>http://localhost:41509/tags/forgejo/</link>
+      <pubDate>Wed, 07 May 2025 10:31:57 +0530</pubDate>
+      <guid>http://localhost:41509/tags/forgejo/</guid>
       <description></description>
     </item>
     <item>
       <title>Wrap</title>
-      <link>https://iamyaash.github.org/tags/wrap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://iamyaash.github.org/tags/wrap/</guid>
+      <link>http://localhost:41509/tags/wrap/</link>
+      <pubDate>Wed, 07 May 2025 10:31:57 +0530</pubDate>
+      <guid>http://localhost:41509/tags/wrap/</guid>
       <description></description>
     </item>
     <item>
       <title>Docs</title>
-      <link>https://iamyaash.github.org/tags/docs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://iamyaash.github.org/tags/docs/</guid>
+      <link>http://localhost:41509/tags/docs/</link>
+      <pubDate>Fri, 25 Apr 2025 21:42:44 +0530</pubDate>
+      <guid>http://localhost:41509/tags/docs/</guid>
       <description></description>
     </item>
   </channel>

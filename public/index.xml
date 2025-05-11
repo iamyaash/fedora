@@ -2,47 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fedora</title>
-    <link>https://iamyaash.github.org/</link>
+    <link>http://localhost:41509/</link>
     <description>Recent content on Fedora</description>
-    <generator>Hugo -- 0.126.2</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 May 2025 10:31:57 +0530</lastBuildDate>
-    <atom:link href="https://iamyaash.github.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:41509/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forgejo UI Changes for Fedora Project</title>
-      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/</link>
+      <link>http://localhost:41509/posts/forgejo/ui/forgejo-theming-blog/</link>
       <pubDate>Wed, 07 May 2025 10:31:57 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/</guid>
+      <guid>http://localhost:41509/posts/forgejo/ui/forgejo-theming-blog/</guid>
       <description>I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.</description>
     </item>
     <item>
       <title>Forgejo Commit Table UI Overhaul</title>
-      <link>https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/</link>
+      <link>http://localhost:41509/posts/forgejo/ui/commit-ui-revamp/</link>
       <pubDate>Tue, 06 May 2025 21:33:31 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/ui/commit-ui-revamp/</guid>
+      <guid>http://localhost:41509/posts/forgejo/ui/commit-ui-revamp/</guid>
       <description>Providing an overview of how the commit table UI overhaul was made (early design stage)</description>
     </item>
     <item>
       <title>Interactive Forgejo Testing</title>
-      <link>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</link>
+      <link>http://localhost:41509/posts/forgejo/ui/forgejo-interactive-testing/</link>
       <pubDate>Fri, 25 Apr 2025 21:42:44 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/ui/forgejo-interactive-testing/</guid>
+      <guid>http://localhost:41509/posts/forgejo/ui/forgejo-interactive-testing/</guid>
       <description>Summary of how to setup an interactive Forgejo testing environment to see if your changes work!</description>
     </item>
     <item>
       <title>New Fedora Theme in Forgejo</title>
-      <link>https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/</link>
+      <link>http://localhost:41509/posts/forgejo/theme/new-fedora-theme-forgejo/</link>
       <pubDate>Sun, 16 Mar 2025 12:40:52 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/theme/new-fedora-theme-forgejo/</guid>
+      <guid>http://localhost:41509/posts/forgejo/theme/new-fedora-theme-forgejo/</guid>
       <description>A new Fedora theme for the Forgejo deployment in Fedora Project</description>
     </item>
     <item>
       <title>Forgejo Theming</title>
-      <link>https://iamyaash.github.org/posts/forgejo/theme/forgejo-theming/</link>
+      <link>http://localhost:41509/posts/forgejo/theme/forgejo-theming/</link>
       <pubDate>Mon, 03 Mar 2025 21:45:39 +0530</pubDate>
-      <guid>https://iamyaash.github.org/posts/forgejo/theme/forgejo-theming/</guid>
-      <description>Customizing the Logo The process of customizing the logo is pretty much simple and straightforward. The logos are stored inside assets/ directory. In order to change the logo,
-Replace the logo.svg with the custom logo (do the same for changing the favicon.svg as well). Run the command in root directory of forgejo/*: make generate-images This process will generate the assets for logo inside the assets/* directory. Keep in mind that changing the logo just by renaming it won&amp;rsquo;t work!</description>
+      <guid>http://localhost:41509/posts/forgejo/theme/forgejo-theming/</guid>
+      <description>&lt;h1 id=&#34;customizing-the-logo&#34;&gt;Customizing the Logo&lt;/h1&gt;
+&lt;p&gt;The process of customizing the logo is pretty much simple and straightforward. The logos are stored inside &lt;code&gt;assets/&lt;/code&gt; directory. In order to change the logo,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Replace the &lt;code&gt;logo.svg&lt;/code&gt; with the custom logo (do the same for changing the &lt;code&gt;favicon.svg&lt;/code&gt; as well).&lt;/li&gt;
+&lt;li&gt;Run the command in root directory of &lt;code&gt;forgejo/*&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make generate-images
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This process will generate the assets for logo inside the &lt;code&gt;assets/*&lt;/code&gt; directory. Keep in mind that changing the logo just by renaming it won&amp;rsquo;t work!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

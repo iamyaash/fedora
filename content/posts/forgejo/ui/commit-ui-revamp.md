@@ -4,7 +4,7 @@ date = 2025-05-06T21:33:31+05:30
 draft = false
 summary = "Providing an overview of how the commit table UI overhaul was made (early design stage)"
 [cover]
-image = ""
+image = "posts/forgejo/ui/commit-ui-revamp/cover-forgejo.png"
 alt = "forgejo-fedoraproject staging environment"
 +++
 

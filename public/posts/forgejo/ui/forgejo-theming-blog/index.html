@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=41509&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Forgejo UI Changes for Fedora Project | Fedora</title>
 <meta name="keywords" content="forgejo, wrap">
 <meta name="description" content="I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.">
 <meta name="author" content="">
-<link rel="canonical" href="https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/">
+<link rel="canonical" href="http://localhost:41509/posts/forgejo/ui/forgejo-theming-blog/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://iamyaash.github.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://iamyaash.github.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://iamyaash.github.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://iamyaash.github.org/apple-touch-icon.png">
-<link rel="mask-icon" href="https://iamyaash.github.org/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:41509/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:41509/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:41509/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:41509/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:41509/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/">
+<link rel="alternate" hreflang="en" href="http://localhost:41509/posts/forgejo/ui/forgejo-theming-blog/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,73 +56,6 @@
 
     </style>
 </noscript>
-  
-
-<meta property="og:url" content="https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/">
-  <meta property="og:site_name" content="Fedora">
-  <meta property="og:title" content="Forgejo UI Changes for Fedora Project">
-  <meta property="og:description" content="I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-07T10:31:57+05:30">
-    <meta property="article:modified_time" content="2025-05-07T10:31:57+05:30">
-    <meta property="article:tag" content="Forgejo">
-    <meta property="article:tag" content="Wrap">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Forgejo UI Changes for Fedora Project">
-<meta name="twitter:description" content="I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://iamyaash.github.org/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Forgejo UI Changes for Fedora Project",
-      "item": "https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Forgejo UI Changes for Fedora Project",
-  "name": "Forgejo UI Changes for Fedora Project",
-  "description": "I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.",
-  "keywords": [
-    "forgejo", "wrap"
-  ],
-  "articleBody": "Introduction As part of Fedora’s infrastructure improvements, we’re bringing source code, issue tracking, and project hosting together onto one platform: Forgejo, deployed on the Fedora OpenShift Cluster. This effort aims to replace legacy systems like Bugzilla and sun-setting Pagure (both src.fedoraproject.org and pagure.io). In doing so, we’re also providing a clear migration path for Fedora Project repositories currently hosted on external platforms, ensuring a smoother and more centralized development experience moving forward.\n*Read Git Forgejo Initiative 2025\nI volunteered to take on the responsibility of working on the frontend development for the project. Throughout this process, I’ve been fortunate to have the guidance and mentorship of Tomáš Hrčka, who has been helping me navigate the challenges and ensure we’re moving in the right direction.\nNote: Throughout this project I will be using both the documentations from https://docs.gitea.com/ and https://forgejo.org/docs.\n1. Theme Color Appearance Modifications My first assignment was customizing the color appearance of the theme, which I felt hard to navigate at first. Because, there is no mention of theme color modifications in Forgejo documentation. So, I visited docs.gitea.com and it clearly explains everything.\nThe source files can be found in the following directories: CSS styles: web_src/css/ JavaScript files: web_src/js/ Vue components: web_src/js/components/ Go HTML templates: templates/ Navigate to the web_src/css/themes/* directory, where you’ll find the CSS styling files for Forgejo’s theme. To ensure consistency with Fedora’s branding, make sure to refer to the official color palette for Fedora Project, which follows the Fedora Project’s color scheme.\nWith the color palette in hand, we can now proceed with updating the theme colors, making changes one step at a time. Use your browser’s developer tools to check whether your modifications are applied correctly or a testing environment.\nI’ve created two new files for the dark (theme-fedora-dark.css) and light (theme-fedora-light.css) themes. The main focus will be on updating the --color-primary and --color-secondary variables. It’s important to select the appropriate shades carefully from the color range to match Fedora’s theme standards.\nHere’s the branch with the theme changes: https://codeberg.org/dovah-kiin/forgejo-fedora\nReferences (used to pick colors by visually comparing them):\nhttps://colorpicker.fr/ https://imagecolorpicker.com/ https://coolors.co/ https://docs.fedoraproject.org/en-US/project/brand/ 2. Logo Change The Process:\nThe process of customizing the logo is pretty much simple and straightforward. The logos are stored inside assets/ directory. In order to change the logo,\nReplace the logo.svg with the custom logo (do the same for changing the favicon.svg as well). Run the command in root directory of forgejo/*: make generate-images This process will generate the assets for logo inside the assets/* directory. Keep in mind that changing the logo just by renaming it won’t work!\nThe Bug: Conflicts with Assets Generation\nWhile generating the assets, I ran into an issue, which I reported previously here:\nIssue $7232 in Codeberg But, I discovered that installing a package called canvas resolved the issue and allowed me to generate the assets successfully.\nnpm install canvas Later, the problem was addressed by replacing canvas with sharp. Although I was asked to investigate the root cause of the issue, I didn’t have enough time. However, the issue was eventually fixed within a few days.\nIt was definitely a worthwhile experience, as it gave me the opportunity to debug the issue and find a solution on my own.\n3. Font Change This is straightforward, that changing a few elements in /web_src/css/base.css would do it. Overall, I changed the only font for English to “Inter” and also root font as well in base.css.\n- --fonts-proportional: -apple-system, \"Segoe UI\", system-ui, Roboto, \"Helvetica Neue\", Arial; + --fonts-proportional: \"Inter\", sans-serif !important; :root * { - --fonts-regular: var(--fonts-override, var(--fonts-proportional)), \"Noto Sans\", \"Liberation Sans\", sans-serif, var(--fonts-emoji); + --fonts-regular: var(--fonts-override, var(--fonts-proportional)), \"Inter\", sans-serif, var(--fonts-emoji); } The Research Part :\nPull Request: font-customizations #13\nThere were some questions raised about whether Forgejo uses a third-party CDN to load fonts or if fonts are bundled during the build process. If it relied on external fonts, we needed to ensure the font would be served from our own infrastructure.\nTo investigate, I started digging into the codebase, looking for any font-related functions or references to external CDNs. However, I couldn’t find a clear answer, so I reached out to the Forgejo team via their Matrix channel.\nThey clarified that Forgejo neither uses a CDN for fonts nor bundles them during the build process. Instead, fonts are referenced via general font-family declarations. If the specified font exists on the system, it will be used; otherwise, the browser falls back to default fonts available on the user’s system.\nFor example,\n:root * { - --fonts-regular: var(--fonts-override, var(--fonts-proportional)), \"Noto Sans\", \"Liberation Sans\", sans-serif, var(--fonts-emoji); + --fonts-regular: var(--fonts-override, var(--fonts-proportional)), \"Inter\", sans-serif, var(--fonts-emoji); } Inter is now the primary font, it will be used if it’s installed on the user’s system If not, the browser will fall back to any available sans-serif font. 4. Border Color Fix for Light Theme (minor fix) Pull Request: minor-fix: added navbar border color in light-theme #17\nI added a border color to the vertical navbar in the light theme. This detail was missed during earlier changes, so I’ve updated it now to ensure visual consistency when switching themes.\n5. Building Process I primarily used Docker to build and test Forgejo. The build process initially took around 40–45 minutes on a 3 MB/s connection, which felt unusually long. The final image size was about 200 MB, which seemed suspicious given the amount of data transferred.\nBuilding the Forgejo Docker Image: To build Forgejo’s Docker image, you need to have both Docker and the Docker Buildx plugin installed. You can build the image using either of the following methods:\nUsing Buildx (recommended):\ndocker buildx build --output=type=docker --tag forgejo:mybuild . Using standard Docker build:\ndocker build --tags forgejo:mybuild . Problem At one point, I started encountering build errors that were difficult to troubleshoot. I tried various approaches, tweaking environment variables, hardcoding dependencies, and modifying build settings, but nothing worked. Since each build took around 40 minutes, debugging was extremely time-consuming and ended up consuming an entire day just to test small changes.\nSolution The issue was caused by how Forgejo’s Dockerfile handles Go module fetching. By default, it sets the following environment variable:\nENV GOPROXY=${GOPROXY:-direct} The direct setting fetches Go modules directly from the source, which can lead to throttling of your system’s public IP. The Go proxy limits requests to 10 per second, and once that limit is reached, your IP may be temporarily blocked or slowed down, causing the build to fail or hang.\nError Log:\nDockerfile:39 -------------------- 37 | RUN make frontend 38 | RUN go build contrib/environment-to-ini/environment-to-ini.go \u0026\u0026 xx-verify environment-to-ini 39 | \u003e\u003e\u003e RUN LDFLAGS=\"-buildid=\" make RELEASE_VERSION=$RELEASE_VERSION GOFLAGS=\"-trimpath\" go-check generate-backend static-executable \u0026\u0026 xx-verify gitea 40 | 41 | # Copy local files -------------------- ERROR: failed to solve: process \"/bin/sh -c LDFLAGS=\\\"-buildid=\\\" make RELEASE_VERSION=$RELEASE_VERSION GOFLAGS=\\\"-trimpath\\\" go-check generate-backend static-executable \u0026\u0026 xx-verify gitea\" did not complete successfully: exit code: 2 i was trying build forgejo docker image from source, but the build failed in the middle with this errors 79.09 go: downloading code.forgejo.org/forgejo/go-xsd-duration v0.0.0-20220703122237-02e73435a078 514.4 cmd/dump.go:23:2: unrecognized import path \"code.forgejo.org/go-chi/session\": parsing code.forgejo.org/go-chi/session: XML syntax error on line 1: invalid UTF-8 514.4 cmd/forgejo/f3.go:20:2: unrecognized import path \"code.forgejo.org/f3/gof3/v3\": parsing code.forgejo.org/f3/gof3/v3: XML syntax error on line 1: invalid UTF-8 514.4 cmd/forgejo/f3.go:21:2: unrecognized import path \"code.forgejo.org/f3/gof3/v3\": parsing code.forgejo.org/f3/gof3/v3: XML syntax error on line 1: invalid UTF-8 514.4 cmd/forgejo/f3.go:22:2: unrecognized import path \"code.forgejo.org/f3/gof3/v3\": parsing code.forgejo.org/f3/gof3/v3: XML syntax error on line 1: invalid UTF-8 To fix this, you can use the official Go proxy by setting in Dockerfile:\nGOPROXY=https://proxy.golang.org,direct This configuration first tries the Go proxy (which is faster and more reliable) and falls back to direct fetching only if needed.\nYou can apply this setting during the Docker build using a build time argument:\ndocker buildx build \\ --build-arg GOPROXY=https://proxy.golang.org,direct \\ --output type=docker \\ --tag forgejo:test-build . Note: By using this build time argument, the build process ends within 6 minutes.\n6. Interactive Testing Initially, I wasn’t aware that Forgejo could be run locally for testing. For a while, I was relying on browser dev tools and Docker builds to preview changes. Eventually, I discovered the proper way to run a local instance using:\nTAGS='sqlite sqlite_unlock_notify' make watch This runs Forgejo locally, but you’ll need to manually set up a database for it to work properly. Since it was my first time handling databases, I documented the full process in a separate guide.\n*Read the full testing environment \u0026 database setup guide here\n7. Commit Table UI Overhaul Forgejo uses an older commit table layout that may be familiar to developers but can be confusing for general users, especially those coming from platforms like GitHub or GitLab. Interestingly, Pagure also uses this outdated design. In these older layouts, the only way to see when a commit was made is by hovering over the date column to reveal a tooltip showing the full date and time.\nThe goal of the new design is to improve clarity by grouping commits by date directly in the interface, removing the need to hover just to understand when changes occurred. Since we’re transitioning from Pagure to Forgejo, this is a great opportunity to introduce a more modern UI and enhance the user experience.\nUpdating the commit view to group entries by date will make the interface cleaner and more user-friendly, particularly for Fedora’s use cases.\n*Read about my progress in the detailed post here.\n*Here’s the branch with the new commit table layout\nConclusion I’m still early in the project and have a long way to go, but this has been a great start to my open-source journey. I’m truly grateful for the opportunity and making the most of it.\nWhat I’ve Learned and Improved On:\nI’ve become more comfortable communicating in public channels, even though I’m not naturally good at social interactions and communication. It’s something I’m actively working on, and while I’m still learning, I’ve been volunteering more and getting better at contributing effectively.\nI’ve started learning Golang, Tailwind CSS, and Golang templates for frontend rendering. I’m using Exercism to help with the fundamentals, and it’s been a great resource. Though I’ve broken a few things while experimenting, I’m gaining a lot of knowledge.\nThe feeling of contributing to something meaningful is incredible, especially knowing that my work will be used by many people. It’s been truly rewarding.\n",
-  "wordCount" : "1708",
-  "inLanguage": "en",
-  "datePublished": "2025-05-07T10:31:57+05:30",
-  "dateModified": "2025-05-07T10:31:57+05:30",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://iamyaash.github.org/posts/forgejo/ui/forgejo-theming-blog/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Fedora",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://iamyaash.github.org/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -140,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iamyaash.github.org/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
+            <a href="http://localhost:41509/" accesskey="h" title="Fedora (Alt + H)">Fedora</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -185,8 +118,7 @@
 <p>*<strong><a href="https://fedoraproject.org/wiki/Initiatives/Git_Forge_Initiative_2025">Read Git Forgejo Initiative 2025</a></strong></p>
 <p>I volunteered to take on the responsibility of working on the frontend development for the project. Throughout this process, I’ve been fortunate to have the guidance and mentorship of <a href="https://fedoraproject.org/wiki/User:Humaton">Tomáš Hrčka</a>, who has been helping me navigate the challenges and ensure we’re moving in the right direction.</p>
 <blockquote>
-<p><strong>Note</strong>: Throughout this project I will be using both the documentations from <a href="https://docs.gitea.com/">https://docs.gitea.com/</a> and <a href="https://forgejo.org/docs">https://forgejo.org/docs</a>.</p>
-</blockquote>
+<p><strong>Note</strong>: Throughout this project I will be using both the documentations from <a href="https://docs.gitea.com/">https://docs.gitea.com/</a> and <a href="https://forgejo.org/docs">https://forgejo.org/docs</a>.</p></blockquote>
 <h1 id="1-theme-color-appearance-modifications">1. <strong>Theme Color Appearance Modifications</strong><a hidden class="anchor" aria-hidden="true" href="#1-theme-color-appearance-modifications">#</a></h1>
 <p>My first assignment was customizing the color appearance of the theme, which I felt hard to navigate at first. Because, there is no mention of theme color modifications in Forgejo documentation. So, I visited <a href="https://docs.gitea.com">docs.gitea.com</a> and it clearly explains everything.</p>
 <pre tabindex="0"><code>The source files can be found in the following directories:
@@ -199,8 +131,7 @@ Go HTML templates: templates/
 <p>With the color palette in hand, we can now proceed with updating the theme colors, making changes one step at a time. Use your browser’s developer tools to check whether your modifications are applied correctly or a testing environment.</p>
 <p>I’ve created two new files for the dark (<code>theme-fedora-dark.css</code>) and light (<code>theme-fedora-light.css</code>) themes. The main focus will be on updating the <code>--color-primary</code> and <code>--color-secondary</code> variables. It&rsquo;s important to select the appropriate shades carefully from the color range to match Fedora’s theme standards.</p>
 <blockquote>
-<p>Here’s the branch with the theme changes: <a href="https://codeberg.org/dovah-kiin/forgejo-fedora">https://codeberg.org/dovah-kiin/forgejo-fedora</a></p>
-</blockquote>
+<p>Here’s the branch with the theme changes: <a href="https://codeberg.org/dovah-kiin/forgejo-fedora">https://codeberg.org/dovah-kiin/forgejo-fedora</a></p></blockquote>
 <p><strong>References (<em>used to pick colors by visually comparing them</em>)</strong>:</p>
 <ul>
 <li><a href="https://colorpicker.fr/">https://colorpicker.fr/</a></li>
@@ -250,7 +181,7 @@ Go HTML templates: templates/
 <li><code>Inter</code> is now the primary font, it will be used if it’s installed on the user&rsquo;s system</li>
 <li>If not, the browser will fall back to any available <code>sans-serif</code> font.</li>
 </ol>
-<h3 id="4-border-color-fix-for-light-theme-_minor-fix_">4. <strong>Border Color Fix for Light Theme</strong> (<em>minor fix</em>)<a hidden class="anchor" aria-hidden="true" href="#4-border-color-fix-for-light-theme-_minor-fix_">#</a></h3>
+<h3 id="4-border-color-fix-for-light-theme-minor-fix">4. <strong>Border Color Fix for Light Theme</strong> (<em>minor fix</em>)<a hidden class="anchor" aria-hidden="true" href="#4-border-color-fix-for-light-theme-minor-fix">#</a></h3>
 <p><a href="https://codeberg.org/fedora/forgejo/pulls/17"><strong>Pull Request: minor-fix: added navbar border color in light-theme #17</strong></a></p>
 <p>I added a border color to the vertical navbar in the light theme.
 This detail was missed during earlier changes, so I’ve updated it now to ensure visual consistency when switching themes.</p>
@@ -293,8 +224,7 @@ This detail was missed during earlier changes, so I’ve updated it now to ensur
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --output type<span style="color:#f92672">=</span>docker <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --tag forgejo:test-build .
 </span></span></code></pre></div><blockquote>
-<p><strong>Note</strong>: <em>By using this build time argument, the build process ends within 6 minutes.</em></p>
-</blockquote>
+<p><strong>Note</strong>: <em>By using this build time argument, the build process ends within 6 minutes.</em></p></blockquote>
 <h1 id="6-interactive-testing">6. <strong>Interactive Testing</strong><a hidden class="anchor" aria-hidden="true" href="#6-interactive-testing">#</a></h1>
 <p>Initially, I wasn’t aware that Forgejo could be run locally for testing. For a while, I was relying on browser dev tools and Docker builds to preview changes. Eventually, I discovered the proper way to run a local instance using:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>TAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sqlite sqlite_unlock_notify&#39;</span> make watch
@@ -326,15 +256,15 @@ This detail was missed during earlier changes, so I’ve updated it now to ensur
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://iamyaash.github.org/tags/forgejo/">Forgejo</a></li>
-      <li><a href="https://iamyaash.github.org/tags/wrap/">Wrap</a></li>
+      <li><a href="http://localhost:41509/tags/forgejo/">Forgejo</a></li>
+      <li><a href="http://localhost:41509/tags/wrap/">Wrap</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://iamyaash.github.org/">Fedora</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:41509/">Fedora</a></span> · 
 
     <span>
         Powered by
