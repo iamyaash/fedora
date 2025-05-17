@@ -4,14 +4,14 @@ date = 2025-05-06T21:33:31+05:30
 draft = false
 summary = "Providing an overview of how the commit table UI overhaul was made (early design stage)"
 [cover]
-image = "posts/forgejo/ui/commit-ui-revamp/cover-forgejo.png"
+image = "posts/forgejo/ui/commit-ui-revamp/cover-forgejo-update.png"
 alt = "forgejo-fedoraproject staging environment"
 +++
 
 # Why the UI Change?
 Forgejo **uses an older commit table layout** that may be familiar to developers but can be confusing for general users coming from platforms like GitHub and GitLab. [_Issue reference_.](https://codeberg.org/forgejo/forgejo/issues/5178) 
 
-Interestingly, Pagure also uses this same outdated layout. In these older designs, the only way to see when a commit was made is by hovering over the date section to reveal the date and time in a tooltip(_popup-overlay_). The goal of the new design is to improve clarity by **grouping commits by date directly in the interface**, eliminating the need to hover just to understand when changes were made. Since we are moving to our new git forge, it's better thing have new feature and UI overhaul than sticking to the old way.
+Interestingly, Pagure also uses this same outdated layout. In these older designs, the only way to see when a commit was made is by hovering over the date section to reveal the date and time in a tooltip(_popup-overlay_). The goal of the new design is to improve clarity by **grouping commits by date directly in the interface**, eliminating the need to hover just to understand when changes were made. Since we are moving to our new git forge, it's a better thing to have new feature and UI overhaul than sticking to the old way.
 
 We're moving from **Pagure to Forgejo**, and both use the old commit table layout. This is a good chance to update it. Grouping commits by date will make it easier to read and give a better experience, especially for Fedora use cases
 
@@ -40,7 +40,7 @@ To get started, I began learning `Go` to build a foundational understanding of h
 
 So, I started experimenting with the build to see what would happen if I changed certain things. It’s mostly trial and error. I do know some CSS, which helped me understand parts of the UI.
 
-Eventually, I hit a point where I couldn’t make much more progress through experimentation alone. That’s when I started doing more research. Since Forgejo doesn’t have extensive documentation (_idk, mayb I was not able to find that_ 🤷🏻‍♂️), I referred to [Gitea’s documentation](https://docs.gitea.com/contributing/guidelines-frontend) instead.
+Eventually, I hit a point where I couldn’t make much more progress through experimentation alone. That’s when I started doing more research. Since Forgejo doesn’t have extensive documentation (_idk, maybe I was not able to find that_ 🤷🏻‍♂️), I referred to [Gitea’s documentation](https://docs.gitea.com/contributing/guidelines-frontend) instead, since Forgejo is a fork of Gitea, their documentation  mostly applies Forgejo too :P
 
 **The Logic of How I Implemented the UI Change?**
 
@@ -49,7 +49,7 @@ I didn’t build everything from scratch. Most of the changes were made by modif
 1. Looping Through Commits (already implemented in the original source)
 
     - The loop gathers information like who made the commit, when it was made, and other related details.
-    - I added a new section to group commits by date, which triggers for each unique date.
+    - I added a new section to group commits by date, which gets triggered for each unique date.
 
 2. Grouping Commits by Date
 
@@ -87,3 +87,7 @@ I didn’t build everything from scratch. Most of the changes were made by modif
             <div class="tw-flex">
                 {{$userName := .Author.Name}}
 ```
+
+# What's Next?
+
+I was only able to create an early design to request feedback from other teams, and I still have more work to do. This is an upstream issue that I'm currently working on. Once it's merged in upstream, it will be ported to Fedora's Forgejo instance soon.

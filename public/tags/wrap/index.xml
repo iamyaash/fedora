@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wrap on Fedora</title>
-    <link>http://localhost:41509/tags/wrap/</link>
+    <link>http://localhost:1313/tags/wrap/</link>
     <description>Recent content in Wrap on Fedora</description>
     <generator>Hugo -- 0.147.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 May 2025 10:31:57 +0530</lastBuildDate>
-    <atom:link href="http://localhost:41509/tags/wrap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/wrap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forgejo UI Changes for Fedora Project</title>
-      <link>http://localhost:41509/posts/forgejo/ui/forgejo-theming-blog/</link>
+      <link>http://localhost:1313/posts/forgejo/ui/forgejo-theming-blog/</link>
       <pubDate>Wed, 07 May 2025 10:31:57 +0530</pubDate>
-      <guid>http://localhost:41509/posts/forgejo/ui/forgejo-theming-blog/</guid>
+      <guid>http://localhost:1313/posts/forgejo/ui/forgejo-theming-blog/</guid>
       <description>I’ll walk through the frontend contributions I made to the Forgejo UI as part of the Fedora Project.</description>
     </item>
   </channel>
