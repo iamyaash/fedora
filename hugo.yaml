@@ -1,0 +1,9 @@
+baseURL: https://iamyaash.github.org/
+languageCode: en-us
+title: Fedora
+theme: ["PaperMod"]
+params:
+  ShowCodeCopyButtons: true
+  homeInfoParams:
+    Title: Hello there 👀!
+    Content: This blog serves as a repository for reports, documentation, and updates related to the Fedora Project, including my ongoing contributions and activities within the community.
