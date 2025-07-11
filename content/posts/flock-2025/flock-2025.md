@@ -1,7 +1,7 @@
 +++
 title = 'Flock 2025: My first Flock ever!'
 date = 2025-06-11T22:14:13+05:30
-draft = false
+draft = true
 tags = ["conference", "flock"]
 summary = "A post about my experience of travelling internationally and attending my first Flock conference in Prague, Czech Republic."
 [Params]
