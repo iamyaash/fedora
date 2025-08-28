@@ -5,7 +5,7 @@ draft = false
 summary = "A new Fedora theme for the Forgejo deployment in Fedora Project"
 author = "Yashwanth Rathakrishnan"
 [cover]
-image = "posts/forgejo/theme/img/forgejo-fedora-theme.png"
+image = "posts/forgejo/theme/forgejo-fedora-theme.png"
 alt = "forgejo-fedoraproject staging environment"
 hiddenInList = false
 +++
