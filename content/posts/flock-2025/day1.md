@@ -23,6 +23,12 @@ The first day at Flock turned out to be even better than I had imagined. There w
 
 The Flock started with this session, it's a good thing I came to the venue so early. The venue had one big hall, which can be divided into four parts for conducting sessions in each. There was announcement for vacating the room after 1pm and encouraging people to volunteer. and some other essential information were discussed before starting sessoions.
 
+At that moment, I realized I was sitting behind [Ankur Sinha](https://accounts.fedoraproject.org/user/Ankursinha/), though I didn’t notice it until I saw his laptop screen open to his Pagure profile. I leaned over and asked, “Are you Ankur Sinha?” He replied, “Yes, I am. How are you? You’re Yashwanth, right?”
+
+It was a truly memorable experience because Ankur was the person who onboarded me to the Fedora Project, it wouldn’t have been possible without his help. I struggled at first to get started, but he consistently checked in on me and guided me until I was able to contribute to the project I was passionate about. Meeting him in person and having a face-to-face conversation was very emotional for me.
+
+After the refreshment break, I saw [**Justin Wheeler**](https://fedoraproject.org/wiki/User:Jflory7), who was busy managing various areas. I took the opportunity to talk to him. It was a new experience to speak with someone I had only interacted with in virtual meetings before. Talking to him in real life was really great. He was one of the people who helped me get a Fellowship in the Fedora Project, and I’m truly grateful to him.
+
 ## FPL Exchange
 {{< figure src="/posts/flock-2025/img/day1/fpl-exchange.jpg" title="The FPL Exchange" caption="By Matthew Miller & Jef Spaleta" alt="The New FPL" >}}
 
