@@ -23,7 +23,7 @@ I booked round-trip tickets with Indigo: from CJB (Coimbatore) to BLR (Bangalore
 
 
 ### Travel Day 1: From India to Abu Dhabi
-{{< figure src="/posts/flock-2025/img/day0/airbus-a320.jpg" title="Coimbatore Domestic Airport, Tamil Nadu, India" caption="Here we go!" alt="CJB-BLR" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day0/airbus-a320.jpg" title="Coimbatore Domestic Airport, Tamil Nadu, India" caption="Here we go!" alt="CJB-BLR" >}}
 
 Since I had already flown domestically before, the first part of the journey didn’t feel very new,though I was incredibly excited to be attending Flock 2025 in person! After some time, I arrived in Bangalore and headed to Belt 9 to collect my luggage from the CJB–BLR flight.
 
@@ -34,7 +34,7 @@ Bag in hand, I began wandering the airport looking for the Abu Dhabi flight. I a
 By the time I figured this out, it was already 8:10 PM, and my next flight was at 9:55 PM. I quickly boarded the inter-terminal shuttle bus, which took me to T2. Once there, I showed my digital boarding pass, checked in my luggage, and got a physical boarding pass. I walked to Gate D2 and reached by 9:00 PM. Boarding had already started.
 
 The aircraft interior was stunning, premium and elegant. There was soothing Arabic flute music playing in the background, which added to the atmosphere. I found my seat and was surprised to see a large screen with a wide range of movies. It was my first time experiencing such features. I was also given a small pillow, blanket, and headphones for comfort.
-{{< figure src="/posts/flock-2025/img/day0/lotr-cabin.jpg" title="Lord of the Rings" caption="Brings back nostalgia!" alt="Few minutes of wathcing Lord of the Rings" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day0/lotr-cabin.jpg" title="Lord of the Rings" caption="Brings back nostalgia!" alt="Few minutes of wathcing Lord of the Rings" >}}
 I started watching *The Lord of the Rings* but later turned the screen off and tried to sleep. The screen was too close to my eyes due to the reclined seat in front of me, and since I’m sensitive to light, it gave me a headache. I couldn’t really sleep,just dozed off intermittently.
 
 The food was okay,not amazing, but not bad either. It came with a main dish, side dish, dessert, and some bread and butter. After 4 hours, we finally landed in Abu Dhabi at 12:30 AM.
@@ -64,11 +64,11 @@ At the immigration counter, they checked my passport and fingerprints. It took a
 ---
 
 # Day 1 in Prague
-{{< figure src="/posts/flock-2025/img/day0/airport-taxi-point.jpg" title="Václav Havel Airport, Prague" caption="Waiting for my Uber at taxi point!" alt="Airport Taxi Point" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day0/airport-taxi-point.jpg" title="Václav Havel Airport, Prague" caption="Waiting for my Uber at taxi point!" alt="Airport Taxi Point" >}}
 
 I stepped outside the airport building entrance, booked an Uber, and crossed the road to reach the pickup point. The driver arrived in about 5 minutes. As we drove through the city, I couldn’t stop admiring the scenery,lush greenery, modern architecture, and a peaceful vibe. It felt like a perfect harmony of nature and technology. I loved Prague already. What I mean is that, Prague has more greenery but what it very modern. It seemed like they found a way to co-exist with nature, rather than destroying it build a house or building. Most importantly, I would say the architecture of buildings was so beautifiul. 
 
-{{< figure src="/posts/flock-2025/img/day0/hotel-stary-pivovar.jpg" title="Hotel STARÝ PIVOVAR" caption="Reached the hotel and it  looks amazing!" alt="Hotel Starry Pivovar, Czech" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day0/hotel-stary-pivovar.jpg" title="Hotel STARÝ PIVOVAR" caption="Reached the hotel and it  looks amazing!" alt="Hotel Starry Pivovar, Czech" >}}
 
 My plan was to just drop off my bags at the hotel and then visit [Akashdeep](https://accounts.fedoraproject.org/user/t0xic0der/) at his hotel. Surprisingly, my room was already available, and I was able to check in immediately. The room was decent,although, to my surprise, it didn’t have a ceiling fan or any temperature control devices. But the cold weather explained it. Additionally, I was used to background noises in India (vehicle paassing, ceiling fan, people talking outside, and so many authentic village noise in South India), but Prague was so calm and silent for most of the time. And it's something new for me and I liked it. Until...
 
@@ -127,13 +127,13 @@ Also, when coming out of the supermarket, you had to scan the bill at the gate, 
 
 Later that evening, we met more amazing folks: **[Michael Konecny](https://accounts.fedoraproject.org/user/Zlopez), [Patrik Polakovic](https://accounts.fedoraproject.org/user/patrikp/), [Aurelien Bompard](https://accounts.fedoraproject.org/user/abompard), [Fabian Arrotin](https://accounts.fedoraproject.org/user/arrfab/), [Samyak Jain](https://accounts.fedoraproject.org/user/jnsamyak/), [Lenka Segura](https://accounts.fedoraproject.org/user/lenkaseg/), [Kevin Fenzi](https://accounts.fedoraproject.org/user/kevin/), [David Kirwan](https://accounts.fedoraproject.org/user/dkirwan/), [Stephen Gallagher](https://accounts.fedoraproject.org/user/sgallagh/)**, and many others.
 
-{{< figure src="/posts/flock-2025/img/day0/mountain-park.jpg" title="Petrin, Prague, Czechia" caption="Chilling after a long walk up the hill." alt="Petrin" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day0/mountain-park.jpg" title="Petrin, Prague, Czechia" caption="Chilling after a long walk up the hill." alt="Petrin" >}}
 
 Eventually, [**Tomáš Hrčka**](https://accounts.fedoraproject.org/user/humaton/) joined us. 
 
 **Then we set off on a real adventure**. [Tomáš Hrčka](https://accounts.fedoraproject.org/user/humaton/), [Michael Konecny](https://accounts.fedoraproject.org/user/Zlopez), [Akashdeep](https://accounts.fedoraproject.org/user/t0xic0der/), [Patrik Polakovic](https://accounts.fedoraproject.org/user/patrikp/), and I went hiking to a mountain-like area outside the city. It was green, peaceful, and full of fresh air. We walked around **14 km** that day! Going uphill wasn’t too hard, but the descent was painful. I literally felt the heat generating inside the my shoe with all the walking.
 
-{{< figure src="/posts/flock-2025/img/day0/old-hanoi.jpg" title="Dinner at Old Hanoi, Czechia" caption="Old Hanoi, Vietnamese Restaurant" alt="Dinner at Old Hanoi" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day0/old-hanoi.jpg" title="Dinner at Old Hanoi, Czechia" caption="Old Hanoi, Vietnamese Restaurant" alt="Dinner at Old Hanoi" >}}
 We later had dinner at [**Old Hanoi**](https://maps.app.goo.gl/526vNsrEdo3o6qVW8), a Vietnamese restaurant. The food was incredible,I had chicken, rice, soy sauce, and more. It was my first time eating a Vietnamese food and it was delicious. Then everyone went back to their hotel, and I waited for some minutes in Akashdeep's room. I was trying to book a cab, but I couldn't. I can't make any payments, so Akashdeep booked an Uber for me, and even came down to send me off, which is nice!
 
 ### End of Day 0 in Prague!
