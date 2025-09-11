@@ -1,6 +1,6 @@
 ---
 date: '2025-06-11'
-draft: true
+draft: false
 title: 'Flock to Fedora 2025: My first day in Prague!'
 summary: "A post about my experience of travelling internationally and attending my first Flock conference in Prague, Czech Republic."
 tags: 
