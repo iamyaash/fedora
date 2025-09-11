@@ -19,7 +19,7 @@ The first day at Flock on **June 5th** turned out to be even better than I had i
 
 
 ## First Session of Flock 2025
-{{< figure src="/posts/flock-2025/img/day1/opening-remarks.jpg" title="Opening Remarks" caption="By Justin Wheeler, Aoife Moloney, Matthew Miller & Jef Spaleta" alt="opening" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/opening-remarks.jpg" title="Opening Remarks" caption="By Justin Wheeler, Aoife Moloney, Matthew Miller & Jef Spaleta" alt="opening" >}}
 
 The Flock started with this session, it's a good thing I came to the venue so early. The venue had one big hall, which can be divided into four parts for conducting sessions in each. There was announcement for vacating the room after 1pm and encouraging people to volunteer. and some other essential information were discussed before starting sessoions.
 
@@ -30,7 +30,7 @@ It was a truly memorable experience because Ankur was the person who onboarded m
 After the refreshment break, I saw [**Justin Wheeler**](https://fedoraproject.org/wiki/User:Jflory7), who was busy managing various areas. I took the opportunity to talk to him. It was a new experience to speak with someone I had only interacted with in virtual meetings before. Talking to him in real life was really great. He was one of the people who helped me get a Fellowship in the Fedora Project, and I’m truly grateful to him.
 
 ## FPL Exchange
-{{< figure src="/posts/flock-2025/img/day1/fpl-exchange.jpg" title="The FPL Exchange" caption="By Matthew Miller & Jef Spaleta" alt="The New FPL" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/fpl-exchange.jpg" title="The FPL Exchange" caption="By Matthew Miller & Jef Spaleta" alt="The New FPL" >}}
 
 [**Matthew Miller**](https://fedoraproject.org/wiki/User:Mattdm) served as the Fedora Project Leader (FPL) for almost 11 years, and I didn’t expect that the Fedora Project would now have a new FPL, **Jef Spaleta**. Even though I’ve only been actively involved with the Fedora Project for a little over a year, it still felt quite emotional for me.  
 
@@ -39,7 +39,7 @@ During his talk, Matthew shared his journey as FPL and spoke about transitioning
 For me, this was one of the best sessions at Flock. It was my very first time attending an international event (and only my second conference overall), and to witness such an important leadership change in my very first Flock made the experience extra special. With a new FPL, Fedora will be going through some restructuring, and I’m really looking forward to seeing how things evolve.  
 
 ## FESCO Q&A
-{{< figure src="/posts/flock-2025/img/day1/fesco-qa.jpg" title="Fedora Engineering Steering Committee's Q&A Session" caption="By Neal Gompa, Fabio Valentini, David Cantrell, Stephen Gallagher, Zbigniew Jędrzejewski-Szmek, Fabio Alessandro, Tomáš Hrčka & Kevin Fenzi" alt="FESCO Q&A" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/fesco-qa.jpg" title="Fedora Engineering Steering Committee's Q&A Session" caption="By Neal Gompa, Fabio Valentini, David Cantrell, Stephen Gallagher, Zbigniew Jędrzejewski-Szmek, Fabio Alessandro, Tomáš Hrčka & Kevin Fenzi" alt="FESCO Q&A" >}}
 
 This session takes place every year during Flock, where the members of FESCo share their plans for the upcoming year, discuss them with the audience, and take questions as well.  
 
@@ -71,7 +71,7 @@ There's this question about Fedora Project 2028 talkked bby Jef Spaleta & Matthe
 This session continued for 60 minutes, and these couple of topics were the most interesting to me
 
 ## Forgejo Talk
-{{< figure src="/posts/flock-2025/img/day1/forgejo.jpg" title="Making the most of Forgejo - (Upcoming) features you should know" caption="By Otto Richter" alt="Forgejo Talk" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/forgejo.jpg" title="Making the most of Forgejo - (Upcoming) features you should know" caption="By Otto Richter" alt="Forgejo Talk" >}}
 
 
 This was the most interesting session for me to attend, especially because I’m contributing to the Fedora Project's Forgejo(downstream), and upstream Forgejo as well. It was great and insightful. I got some good ideas about what the Forgejo folks are working on, the areas where they might need help, and the features they have or are developing. I learned about the history of Forgejo, how it forked from Gitea after Gitea became a for-profit company, and how Codeberg came into existence.  
@@ -83,14 +83,14 @@ He discussed features like dependencies in issues, making pull requests from the
 At one point, he asked who would not use Forgejo for software development, and some people raised their hands. He explained that he has been working on user research to improve Forgejo and make it more accessible to all kinds of users, rather than just being a developer-friendly hosting platform.  
 
 ## Bazzite Talk
-{{< figure src="/posts/flock-2025/img/day1/bazzite.jpg" title="Fedora’s Gaming Renaissance: The Bazzite Effect" caption="By Noel Miller and Antheas Kapenekakis" alt="Bazzite Talk" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/bazzite.jpg" title="Fedora’s Gaming Renaissance: The Bazzite Effect" caption="By Noel Miller and Antheas Kapenekakis" alt="Bazzite Talk" >}}
 
 This was one of the interesting sessions to attend, well, obviously, it was about gaming!  
 
 He talked about how Bazzite came into existence as a community-driven gaming platform aimed at providing a seamless and optimized Linux gaming experience. They chose Fedora Linux as the base for Bazzite because of its stability, cutting-edge technology, and strong open-source community, making it the best decision to be a downstream project of Fedora Linux. He also shared some exciting future plans for the project as well.  
 
 # Lunch With Mentors & Friends
-{{< figure src="/posts/flock-2025/img/day1/mentor-mentee-lunch.jpg" title="Mentor–Mentee Lunch Matching @Lunch Area" caption="Lunch with Julia Bley, Sumantro Mukherjee, & Nikita Tripathi" alt="The New FPL" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/mentor-mentee-lunch.jpg" title="Mentor–Mentee Lunch Matching @Lunch Area" caption="Lunch with Julia Bley, Sumantro Mukherjee, & Nikita Tripathi" alt="The New FPL" >}}
 
 This was one of the best experiences for me at Flock. I had the opportunity to have lunch with some amazing professionals who shared really useful information about job hunting, preparation, and interviews. They also spoke about their personal interests, and their journey which made the conversation even more engaging.
 
@@ -105,7 +105,7 @@ Towards the end of lunch, Nikita suddenly felt nauseous, apparently due to the f
 # Post-Lunch  
 Tomas Hrcka introduced me to [Otto Richter](https://codeberg.org/fnetX), and we discussed Forgejo and its future plans. Tomas left after a while, and I spent most of my time talking with Otto about Forgejo, contributions, studies, and more. I thought I wouldn’t be able to maintain the conversation, mainly because I’m not very confident in English. But interestingly, Otto was a really nice person, and we talked a lot. I even skipped several sessions. Time flew by, and before I knew it, I had missed almost all the sessions in the second half of the day. Sadly, I didn’t take a picture with Otto that day.  
 
-{{< figure src="/posts/flock-2025/img/day1/with-mentor.jpg" title="" caption="With My Mentor in Fedora Project Fellowship" alt="Bazzite Talk" >}}
+{{< figure src="/fedora/posts/flock-2025/img/day1/with-mentor.jpg" title="" caption="With My Mentor in Fedora Project Fellowship" alt="Bazzite Talk" >}}
 After a while, the sessions for Day 1 were about to end, and I spent some time just roaming around. Not to mention, the food was amazing, so I kept taking bites every 30 minutes. I saw Tomas sitting at the front desk, so I went over to ask if they needed any help or volunteers. I ended up volunteering for the last half of the last day. Some time later, Sumantro came by, and we took a photo together. It was a very memorable moment for me, as it was a photo with my mentor.  
 
 # End of Day 1 in Flock 
