@@ -23,7 +23,7 @@ I woke up pretty late on June 6th, the second day of Flock 2025. I was so tired 
 Sean is a really nice person... I had the chance to talk with him on the first day of Flock. He asked me about Fedora’s "Beefy" {{< inTextImg url="/posts/flock-2025/img/day2/beefy.png" alt="Forgejo Talk" height="15px" >}}
  mascot , which is how we got to know each other. We chatted for a few minutes, introduced ourselves, and talked about our reasons for being at Flock.
 
-On day two, "Bootable Containers" was the first session I attended, and it was genuinely insightful. I’ve always enjoyed exploring homelabs, servers, and hands-on technology projects, so the introduction to `bootc` really sparked my enthusiasm. The idea of testing it out when I get back home already has me looking forward to new experiments.
+On day two, "Bootable Containers" was the first session I attended, and it was genuinely insightful. I’ve always enjoyed exploring homelabs, servers, and hands-on te After a while, we all went to the top of the boat to take a group photo. It was a nice and great moment, with everyone enjoying the fresh air and the view.chnology projects, so the introduction to `bootc` really sparked my enthusiasm. The idea of testing it out when I get back home already has me looking forward to new experiments.
 
 During the session, Sean discussed what `bootc` is, the contexts in which it’s used, the advantages it offers, and situations where it may not be the right fit. His explanations connected directly with my interests and learning style, I prefer picking things up by doing, so I’m especially keen to try out `bootc` in my own setup.
 
