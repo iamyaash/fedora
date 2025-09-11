@@ -1,6 +1,6 @@
 ---
 date: '2025-06-14'
-draft: true
+draft: false
 title: 'Flock to Fedora 2025: Day 1'
 summary: "A great start with announcement of new FPL, Mentor-Mentee Lunch Matching, Forgejo Discussions and more."
 tags: 
