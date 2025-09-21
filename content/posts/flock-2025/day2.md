@@ -79,7 +79,14 @@ So, this was unexpected, there was this boat party going to be held after the fl
 
 I eventually joined him near by the fountain, and we started walking towards the boat. It was not far but it's walkable. We had nice conversations going on, and I was telling about the one mission _Call of Duty Modern Warface 3_ game, and it's crazy for someone like me from a village to travel internationally and seeing the place I used to see in a video when I was kid. 
 
-{{< figure src="/fedora/posts/flock-2025/img/day2/boat-wait.jpg" title="Waiting at the Port" caption="Tomas enjoys a thoughtful moment rolling his cigar, before the boat ride begins!" alt="Port waiting scene" >}}
+{{< figure 
+  src="/posts/flock-2025/img/day2/boat-wait-vid.gif" 
+  title="Waiting at the Port" 
+  caption="Tomas enjoys a thoughtful moment rolling his cigar, before the boat ride begins!" 
+  alt="Port waiting scene" 
+  width="50%"
+  style="margin-left:auto; margin-right:auto; display:block;"
+>}}
 Eventually, we reached the port and waited for everyone to arrive. After some time, they started allowing people inside. We had to show the ID tag that was provided to us; otherwise, entry was not allowed. 
 
 {{< figure
