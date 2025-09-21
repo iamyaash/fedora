@@ -9,10 +9,10 @@ tags:
 params:
     author: "Yashwanth Rathakrishnan"
     ShowReadingTime: true
-    ShowCodeCopyButtons: true
 cover:
     image: "posts/flock-2025/img/day2/cover-day2.jpg"
     alt: "cover-image-with-group-photo"
+    responsiveImages: false
 ---
 # Second Day at Flock
 I woke up pretty late on June 6th, the second day of Flock 2025. I was so tired from walking 7 kilometers to my hotel the previous day that I was completely exhausted. Even my phone alarms didn’t help, I ended up waking up at around 10 AM CEST. By then, I had already missed two sessions at Flock, so I reached the venue late and joined the first session I could.

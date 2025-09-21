@@ -9,10 +9,10 @@ tags:
 params:
     author: "Yashwanth Rathakrishnan"
     ShowReadingTime: true
-    ShowCodeCopyButtons: true
 cover:
     image: "posts/flock-2025/img/day1/big-hall.jpg"
     alt: "forgejo-fedoraproject staging environment"
+    responsiveImages: false
 ---
 # First Day At Flock  
 The first day at Flock on **June 5th** turned out to be even better than I had imagined. There were so many people, and the venue’s interior was beautifully designed, creating a lively and welcoming atmosphere. I had the chance to talk and connect with a lot of people, and I was pleasantly surprised by how genuinely curious everyone was about what I’m working on. Starting conversations with strangers felt effortless, and I quickly found myself making new friends. Throughout the day, I always felt welcomed and never faced any difficulties. And, to top it all off, the food was absolutely fantastic, with so many options to enjoy.  

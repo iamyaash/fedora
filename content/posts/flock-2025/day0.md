@@ -9,10 +9,10 @@ tags:
 params:
     author: 'Yashwanth Rathakrishnan'
     ShowReadingTime: true
-    ShowCodeCopyButtons: true
 cover:
     image: "posts/flock-2025/img/day0/prague.jpg"
     alt: "forgejo-fedoraproject staging environment"
+    responsiveImages: false
 ---
 
 # Getting Ready to Depart from India!

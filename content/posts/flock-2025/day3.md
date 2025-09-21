@@ -9,10 +9,10 @@ tags:
 params:
     author: "Yashwanth Rathakrishnan"
     ShowReadingTime: true
-    ShowCodeCopyButtons: true
 cover:
     image: "posts/flock-2025/img/day3/cover-day3.jpg"
     alt: "Group photo in the last day of Flock 2025 (June 7th)"
+    responsiveImages: false
 ---
 # Last Day At Flock
 I was exhausted on last of Flock, because we had boat party on [yesterday](https://iamyaash.github.io/fedora/posts/flock-2025/day2/) and there's a lot of walking too. I was honestly tired and arrivied at the venue a bit late. The first session of the was going to ends and it's about time for the second session. But I honesly nothing interesting to attend. However I was so interested in attending "Distgit Implementation in Forgejo" by Tomas Hrcka. So I thought of roaming around catching up with folks, eating some snacks, cakes and some drinks.
