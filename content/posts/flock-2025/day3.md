@@ -1,6 +1,6 @@
 ---
 date: '2025-06-18'
-draft: true
+draft: false
 title: 'Flock to Fedora 2025: Day 3'
 summary: "The last felt day of Flock went fast for me and it was kind of sad to reach the end of conference so soon. I have enjoyed my time there, and it was trully a new experience for me and I'm thankful for Fedora Project!"
 tags: 
@@ -15,7 +15,8 @@ cover:
     responsiveImages: false
 ---
 # Last Day At Flock
-I was exhausted on last of Flock, because we had boat party on [yesterday](https://iamyaash.github.io/fedora/posts/flock-2025/day2/) and there's a lot of walking too. I was honestly tired and arrivied at the venue a bit late. The first session of the was going to ends and it's about time for the second session. But I honesly nothing interesting to attend. However I was so interested in attending "Distgit Implementation in Forgejo" by Tomas Hrcka. So I thought of roaming around catching up with folks, eating some snacks, cakes and some drinks.
+I was exhausted on the last day of Flock because we had a [boat party the day before](https://iamyaash.github.io/fedora/posts/flock-2025/day2/) and there was a lot of walking too. I was honestly tired and arrived at the venue a bit late. The first session was about to end, and it was almost time for the second session. However, I honestly didn’t find anything interesting to attend. Still, I was very interested in attending “Distgit Implementation in Forgejo” by Tomas Hrcka. So, I decided to roam around, catch up with folks, and enjoy some snacks, cakes, and drinks.
+
 
 ## Conversation With A Fellow OG Gamer
 {{< figure src="/fedora/posts/flock-2025/img/day3/michal.jpg" title="Look what we have here! 👀" caption="Unfortunately, we didn't find any time to play board games though, maybe next time :(" alt="Gamers" >}}
@@ -81,7 +82,7 @@ Honestly, much of what was discussed was beyond my current understanding. People
 
 Aurélien gave a talk about various Fedora Infrastructure applications, including Fedora Messaging, Badges, Notifications, Tiny Stage, and other important tools. Since I have been contributing and working with the Fedora Infrastructure team, attending this session was very valuable. It gave me a good overview of how these applications work and helped me understand where my help is most needed.
 
-A few days ago, I was talking with [Patrik Polakovic](https://accounts.fedoraproject.org/user/patrikp/) who mentioned that they need contributors for Bodhi. He explained how they have been using the same application for a long time. I have been looking for information about Bodhi and related areas, as I find the Bodhi codebase quite complex in my honest opinion. I want to find a way to contribute to a Fedora Infrastructure application that benefits both the project and myself.c
+A few days ago, I was talking with [Patrik Polakovic](https://accounts.fedoraproject.org/user/patrikp/) who mentioned that they need contributors for Bodhi. He explained how they have been using the same application for a long time. I have been looking for information about Bodhi and related areas, as I find the Bodhi codebase quite complex IHMO. I want to find a way to contribute to a Fedora Infrastructure application that benefits both the project and myself.c
 
 {{< figure 
     src="/fedora/posts/flock-2025/img/day3/infra-app-chart.jpg" 
@@ -92,7 +93,7 @@ A few days ago, I was talking with [Patrik Polakovic](https://accounts.fedorapro
 This session helped me get a clearer overall understanding of the Fedora Infrastructure ecosystem and where I can contribute effectively.
 
 ## Last Day: Wrapping Up!
-After attending the last session, I stepped outside the hall and found Ankur Sinha chatting with some people. I joined them, and we ended up talking for a while. I thanked Ankur for being there when I took my first steps into open source. If it weren’t for him, I might have taken a very different path. Thanks to him, I stuck with Fedora, found a place where I wanted to contribute, and started making progress. It wasn’t easy at first, I faced many obstacles trying to get involved in open-source projects and communities, but Fedora was the most welcoming of all. I’m really glad I got to meet Ankur.
+After attending the last session, I stepped outside the hall and found [Ankur Sinha](https://accounts.fedoraproject.org/user/Ankursinha/) chatting with some people. I joined them, and we ended up talking for a while. I thanked Ankur for being there when I took my first steps into open source. If it weren’t for him, I might have taken a very different path. Thanks to him, I stick with Fedora, found a place where I wanted to contribute, and started making progress. It wasn’t easy at first, I faced many obstacles trying to get involved in open-source projects and communities, but Fedora was the most welcoming of all. I’m really glad I got to meet Ankur.
 
 Then, I noticed some people dancing near the last table. It seemed like they could earn a badge for dancing. I was shy, so I didn’t join in, but now I think I should have! :P
 
@@ -106,7 +107,7 @@ After that, I started roaming around the hall, taking a video of the whole venue
 
 A little later, I caught up with my mentor, Tomáš Hrčka. He told me he wouldn’t be available the next day because he had to leave early to attend DevConf.CZ. We shared a warm hug, and I felt a bit sad since I didn’t expect him to leave that day. I had been planning to join him the next day if the CLE folks had any plans. Eventually, everyone left the venue, and I said goodbye to all before heading back to my room to get some rest.
 
-However, I forgot that I didn’t have a tram ticket. I looked for Tomas, who was heading somewhere with some CLE folks, so I tagged along. He was talking with his manager, and I was waiting for a chance to ask for help with a ticket. Then, I spotted [Otto Richter](https://codeberg.org/fnetX) among the group, and he kindly lent me a ticket, which was very helpful at that moment🙌🏼. Since I wasn’t invited to where they were going, I left the group
+However, I forgot that I didn’t have a tram ticket. I looked for Tomas, who was heading somewhere with some CLE folks, so I tagged along. Tomas was talking with his manager, and I was waiting for a chance to ask for help with a ticket. Then, I spotted [Otto Richter](https://codeberg.org/fnetX) among the group, and he kindly lent me a ticket, which was very helpful at that moment🙌🏼. Since I wasn’t invited to where they were going, I left the group
 
 ## On The Way Back To The Hotel
 {{< figure 
