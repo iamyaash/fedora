@@ -296,3 +296,22 @@ So, the planes, cars, and bikes were all placed in a single building. The cars w
 ### Astronomy Museum
 
 After finishing the visit to the Cars, Planes, and Bikes museum, we started heading to the Astronomy museum. There, they displayed tools used in astronomy, including very old instruments, vintage electronics used for astronomy, and more.
+
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/narodni/astronomy/img-cover.jpg" 
+    width="100%" 
+>}}
+
+{{< collapse summary="**`Checkout Other images`**" >}}
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img0.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img1.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img2.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img3.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img4.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img5.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img6.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img7.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img8.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/astronomy/img9.jpg)
+{{< /collapse >}}
