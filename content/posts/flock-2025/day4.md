@@ -11,6 +11,11 @@ author: "Yashwanth Rathakrishnan"
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowCodeCopyButtons: true
+
+cover:
+    image: "posts/flock-2025/img/day4/narodni/cover-day4.jpg"
+    alt: "Narodni Technicke Museum"
+    responsiveImages: false
 ---
 # Day 4 in Prague
 ## Morning Breakfast
@@ -125,7 +130,6 @@ This was my first time visiting a museum, and it was simply amazing. Watching Ho
 ---
 {{< figure 
     src="/posts/flock-2025/img/day4/movie/lotr/showcase.jpg" 
-	caption="What is Gollum doing in Harry Potter? 👀"
     width="100%" 
 >}}
 
@@ -194,12 +198,101 @@ This was my first time visiting a museum, and it was simply amazing. Watching Ho
 
 
 ## To the National Museum
-After visting Film Legends museum, we started heading to Narodni Nation Museum which is dedicated for historical collections of the Czech Republic.
+After visting Film Legends museum, we started heading to the Nation Museum which is dedicated for historical collections of the Czech Republic.
 
 But Michael Konecny had to leave our group since his train will be arriving soon, so we went with Michael to the nearby station and sent him off.
 
 Shortly, it started raining fortunately Akashdeep and some other bought umberally but still that was not enough so we had to stop by for few minutes. Then we decided go grab some food, so we went to the nearby KFC and it was my first time eating at KFC too :P
 
-I don't how to order, and my order is not working either so Akashdeep helped with that (_honestly without Akashdeep, my trip to Prague would have been a disaster_). I waited in the queue and got my food and sat at my table.
+I don't how to order, and the machine is not not working either so Akashdeep helped with that (_honestly without Akashdeep, my trip to Prague would have been a disaster_). I waited in the queue and got my food and sat at my table.
 
-So I was sitting with Greg Sutcliffe, and we started talking and eventually I got to learn that he play [Oxygen Not Included](https://en.wikipedia.org/wiki/Oxygen_Not_Included) (ONI). I also play ONI, but it felt a little too hard for me and I was also busy with other works and I can't find time to play that game. After talking with Greg for a while, I got to know that play ONI is actually a good thing in order to learn automation and I can actually related with that. So we started talking more about the games we play on the way to the [Narodni Museum](https://en.wikipedia.org/wiki/National_Museum_(Prague))
+So I was sitting with Greg Sutcliffe, and we started talking and eventually I got to learn that he play [Oxygen Not Included](https://en.wikipedia.org/wiki/Oxygen_Not_Included) (ONI). I also play ONI, but it felt a little too hard for me and I was also busy with other works and I can't find time to play that game. After talking with Greg for a while, I got to know that play ONI is actually a good thing in order to learn automation and I can actually related with that. So we started talking more about the games we play on the way to the [Narodni Museum](https://en.wikipedia.org/wiki/National_Museum_(Prague)).
+
+Eventually we reached the tram station near the museum and we started walking to the museum. Then we got inside, got our ticket/pass and I took the guide books (mistakenly took the Czech language book) for me and Akashdeep as well.
+
+### Camera Museum
+At first we started looking into the Camera museum, they had almost all the famous cameras from the old days to the modern cameras as well. They have placed the cameras and they also had a camera booth that explains how the lighting works when taking a photo.
+<!-- ![Ambrotype & Ferrotype Camera](/posts/flock-2025/img/day4/narodni/camera/img1.jpg) -->
+{{< figure 
+    src="/posts/flock-2025/img/day4/narodni/camera/img-cover.jpg" 
+    width="100%" 
+>}}
+
+{{< collapse summary="**`Checkout Other Images`**" >}}
+![collections](/posts/flock-2025/img/day4/narodni/camera/img0.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img1.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img2.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img3.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img4.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img5.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img6.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img7.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img8.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/camera/img9.jpg)
+{{< /collapse >}}
+
+### Bike Museum
+After visiting the camera museum, we headed to the bike museum, where there were many bikes on display, including Harley Davidson, Jawa, Praga, BMW, Norton, and many more. I was tagging along with Fabian and some other folks from Rocky Linux Enterprise.
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/narodni/bike/img-cover.jpg" 
+    width="100%" 
+>}}
+
+{{< collapse summary="**`Checkout Other Bikes`**" >}}
+![collections](/posts/flock-2025/img/day4/narodni/bike/img0.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img1.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img2.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img3.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img4.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img5.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img6.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img7.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img8.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img9.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img10.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img11.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img12.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img13.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/bike/img14.jpg)
+{{< /collapse >}}
+
+### Plane Museum
+The planes were displayed in the center of the building, hanging from the ceiling and some were placed on ground alongside the vintage cars. There were 19th-century planes, warplanes, helicopters, and more. It brought me so much joy; as a child, I used to play WW2 games and had seen those planes in movies or games. It was such a pleasure to see them in person.
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/narodni/plane/img-cover.jpg" 
+    width="100%" 
+>}}
+
+{{< collapse summary="**`Checkout Other Planes`**" >}}
+![collections](/posts/flock-2025/img/day4/narodni/plane/img1.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/plane/img2.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/plane/img3.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/plane/img4.jpg)
+{{< /collapse >}}
+
+### Car Museum
+So, the planes, cars, and bikes were all placed in a single building. The cars were displayed on the ground alongside the planes. There were many different cars, including wooden ones, cars especially used by presidents, VIP cars, and more.
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/narodni/car/img-cover.jpg" 
+    width="100%" 
+>}}
+
+{{< collapse summary="**`Checkout Other Planes`**" >}}
+![collections](/posts/flock-2025/img/day4/narodni/car/img1.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img2.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img3.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img4.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img5.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img6.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img7.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img8.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/car/img9.jpg)
+
+{{< /collapse >}}
+
+### Astronomy Museum
+
+After finishing the visit to the Cars, Planes, and Bikes museum, we started heading to the Astronomy museum. There, they displayed tools used in astronomy, including very old instruments, vintage electronics used for astronomy, and more.
