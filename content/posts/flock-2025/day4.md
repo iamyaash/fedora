@@ -315,3 +315,29 @@ After finishing the visit to the Cars, Planes, and Bikes museum, we started head
 ![collections](/posts/flock-2025/img/day4/narodni/astronomy/img8.jpg)
 ![collections](/posts/flock-2025/img/day4/narodni/astronomy/img9.jpg)
 {{< /collapse >}}
+
+### Misc
+After that, we went inside the electronics museum, where they displayed household electronics used in the 19th century. Everything was household electronics and equipment, arranged according to the era they were used. I recognized some of them; they even existed in India, although they were broken at the time. They displayed items like washing machines, electric stoves, trimmers, and more.
+
+But most of the folks who came with us felt bored looking at the household items museum, so we went to another place, the "civilization" museum (I guess). It showcased different tribes, the tools they used, and many other historical civilization artifacts.
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/narodni/misc/img-cover.jpg" 
+    width="100%" 
+>}}
+
+{{< collapse summary="**`Checkout Other images`**" >}}
+![collections](/posts/flock-2025/img/day4/narodni/misc/img0.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img1.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img2.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img3.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img4.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img5.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img6.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img7.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img8.jpg)
+![collections](/posts/flock-2025/img/day4/narodni/misc/img9.jpg)
+{{< /collapse >}}
+
+
+## 
