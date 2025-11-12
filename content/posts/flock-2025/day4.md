@@ -339,5 +339,13 @@ But most of the folks who came with us felt bored looking at the household items
 ![collections](/posts/flock-2025/img/day4/narodni/misc/img9.jpg)
 {{< /collapse >}}
 
+Well, the museum sightseeing has wrapped up, and the group has split into two. One group walked back to the hotel, while the others used public transport. I tagged along with Akashdeep and a person from Rocky Linux Enterprise and we used public transport. We finally reached the hotel, and I relaxed in Akashdeep's room for a while.
 
-## 
+---
+
+## Dinner with Fedora Folks
+{{< figure 
+    title="On the way to the Restaurant"
+    src="/posts/flock-2025/img/day4/dinner/dinner-with-fedora-folks.gif" 
+    width="100%"
+>}}

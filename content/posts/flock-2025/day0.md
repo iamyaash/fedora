@@ -103,7 +103,10 @@ Meeting him in person for the first time was an unforgettable moment. He has bee
 ---
 
 ### Chilling with [Akashdeep](https://accounts.fedoraproject.org/user/t0xic0der/)
-
+{{< figure
+    src="/fedora/posts/flock-2025/img/day0/ibis-with-akash.jpg" 
+    width="100%"
+>}}
 I spent some time in Akash’s room, watching him prepare for his upcoming talks, he had been accepted for four sessions at Flock, which was seriously impressive. I was learning just by observing him. I also told him about the problem I was having with my debit card. He tried helping me fix the issue, but nothing worked. I don't think anything could have solved it, because the card was working in a few places, but not everywhere. I suspect the main reason is that my card isn’t being detected consistently, it works in some places but not others (_indicating that it might not be suitable for international usage_)
 
 
