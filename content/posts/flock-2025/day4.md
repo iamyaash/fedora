@@ -1,6 +1,6 @@
 ---
 date: '2025-06-20'
-draft: true
+draft: false
 title: 'Flock to Fedora 2025: Day 4'
 summary: "Exploring the city of Prague, going to museums, having dinner with Fedora folks and more. This is the day before the last day in Prague, and it was certainly great day."
 tags: 
@@ -71,7 +71,6 @@ This was my first time visiting a museum, and it was simply amazing. Watching Ho
 >}}
 
 {{< collapse summary="**`Marvel Collections`**" >}}
-![collections](/posts/flock-2025/img/day4/movie/marvel/img0.jpg)
 ![collections](/posts/flock-2025/img/day4/movie/marvel/img1.jpg)
 ![collections](/posts/flock-2025/img/day4/movie/marvel/img3.jpg)
 ![collections](/posts/flock-2025/img/day4/movie/marvel/img4.jpg)
@@ -206,7 +205,7 @@ Shortly, it started raining fortunately Akashdeep and some other bought umberall
 
 I don't how to order, and the machine is not not working either so Akashdeep helped with that (_honestly without Akashdeep, my trip to Prague would have been a disaster_). I waited in the queue and got my food and sat at my table.
 
-So I was sitting with Greg Sutcliffe, and we started talking and eventually I got to learn that he play [Oxygen Not Included](https://en.wikipedia.org/wiki/Oxygen_Not_Included) (ONI). I also play ONI, but it felt a little too hard for me and I was also busy with other works and I can't find time to play that game. After talking with Greg for a while, I got to know that play ONI is actually a good thing in order to learn automation and I can actually related with that. So we started talking more about the games we play on the way to the [Narodni Museum](https://en.wikipedia.org/wiki/National_Museum_(Prague)).
+So I was sitting with Greg Sutcliffe, and we started talking and eventually I got to learn that he play [Oxygen Not Included](https://en.wikipedia.org/wiki/Oxygen_Not_Included) (ONI). I also play ONI, but it felt a little too hard for me and I was also busy with other works and I can't find time to play that game. After talking with Greg for a while, I got to know that playing ONI is actually a good thing in order to learn automation and I can actually related with that(_with Linux server experiments & automation_). So we started talking more about the games we play on the way to the [Narodni Museum](https://en.wikipedia.org/wiki/National_Museum_(Prague)).
 
 Eventually we reached the tram station near the museum and we started walking to the museum. Then we got inside, got our ticket/pass and I took the guide books (mistakenly took the Czech language book) for me and Akashdeep as well.
 
@@ -232,7 +231,7 @@ At first we started looking into the Camera museum, they had almost all the famo
 {{< /collapse >}}
 
 ### Bike Museum
-After visiting the camera museum, we headed to the bike museum, where there were many bikes on display, including Harley Davidson, Jawa, Praga, BMW, Norton, and many more. I was tagging along with Fabian and some other folks from Rocky Linux Enterprise.
+After visiting the camera museum, we headed to the bike museum, where there were many bikes on display, including Harley Davidson, Jawa, Praga(_Prague's authentic bikes_), BMW, Norton, and many more. I was tagging along with Fabian and some other folks from Rocky Linux Enterprise.
 
 {{< figure 
     src="/posts/flock-2025/img/day4/narodni/bike/img-cover.jpg" 
@@ -280,7 +279,7 @@ So, the planes, cars, and bikes were all placed in a single building. The cars w
     width="100%" 
 >}}
 
-{{< collapse summary="**`Checkout Other Planes`**" >}}
+{{< collapse summary="**`Checkout Other Images`**" >}}
 ![collections](/posts/flock-2025/img/day4/narodni/car/img1.jpg)
 ![collections](/posts/flock-2025/img/day4/narodni/car/img2.jpg)
 ![collections](/posts/flock-2025/img/day4/narodni/car/img3.jpg)
@@ -339,13 +338,35 @@ But most of the folks who came with us felt bored looking at the household items
 ![collections](/posts/flock-2025/img/day4/narodni/misc/img9.jpg)
 {{< /collapse >}}
 
-Well, the museum sightseeing has wrapped up, and the group has split into two. One group walked back to the hotel, while the others used public transport. I tagged along with Akashdeep and a person from Rocky Linux Enterprise and we used public transport. We finally reached the hotel, and I relaxed in Akashdeep's room for a while.
+Well, the museum sightseeing has wrapped up, and the group has split into two. One group walked back to the hotel, while the others used public transport. I tagged along with Akashdeep and Sherif and we used public transport. We finally reached the hotel, and I relaxed in Akashdeep's room for a while.
 
 ---
 
 ## Dinner with Fedora Folks
 {{< figure 
-    title="On the way to the Restaurant"
+    title="On the way to the Lemon Leaf Restaurant"
     src="/posts/flock-2025/img/day4/dinner/dinner-with-fedora-folks.gif" 
     width="100%"
 >}}
+
+Initially, I was planning to join [Justin Wheeler](https://fedoraproject.org/wiki/User:Jflory7), but it seemed like he was unsure about when they were going to dinner, so I asked the CLE team whether I could join them, and everybody agreed. It even seemed like they had already counted me in, so I decided to go with the CLE folks for dinner. We left [Ibis](https://maps.app.goo.gl/fYRn78u8eyzTJ6Rz8) in the evening with the CLE folks. After some time, we eventually reached the restaurant and got a table for us.
+
+I sat near [Akashdeep](https://fedoraproject.org/wiki/User:T0xic0der), [Jonathan](https://fedoraproject.org/wiki/User:Jdieter), [Aurelian](https://fedoraproject.org/wiki/User:Abompard), and Fabian. I remembered that I had not received the badge for **Flock 2025** and the **Flock Boat Party**. [Aurelian](https://fedoraproject.org/wiki/User:Abompard) helped me get it, and I finally received badges for **Flock 2025** and the **Flock Boat Party**.
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/dinner/dinner.jpg" 
+    width="100%"
+>}} 
+I noticed Akashdeep playing Genshin Impact, so I asked to see his loadouts. He gave me his phone, and I played for a few minutes then I noticed his battery was low, so I returned it.
+
+After dinner, I decided to tag along with Akashdeep. He was going to buy some things, and I thought it would be nice to join him. He visited stores for souvenirs, but nothing interested me as most items were expensive, and I did not want to spend more on cab charges. So, I decided to buy chocolates at Costco.
+
+{{< figure 
+    src="/posts/flock-2025/img/day4/dinner/returning.jpg" 
+    width="100%"
+>}} 
+Akashdeep and I were on our way back to the hotel when we saw few people jogging at night, which seemed weird to me. After some walking, Akashdeep and I shared a warm hug goodbye near Costco. We separated, and I entered Costco to buy chocolates.
+
+I bought many and checked out. When I got outside, it was very late. The tram arrived, so I boarded it, reached my room, and set early alarms since I had to get to the airport early.
+
+I eventually slept while watching movies on TV.
