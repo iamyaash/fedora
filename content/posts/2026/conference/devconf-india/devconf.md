@@ -1,6 +1,6 @@
 ---
 date: '2026-02-20T16:54:05+05:30'
-draft: true
+draft: false
 title: 'DevConf India 2026'
 summary: "Fedora Project is fortunate enough to secure a booth at DevConf India in Pune. Akashdeep Dhar, Samyak Jain, Shounak Dey & myself attended DevConf India representing Fedora Project. The booth was a success, we also attracted a lot of new comers and those who are in their early phase in open source. Most of the visitors were college students and early in their career. We also had Matthew Miller's talk which attracted so many people and the room was filled with lot of people as well."
 author: "Yashwanth Rathakrishnan"
