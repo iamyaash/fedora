@@ -7,8 +7,6 @@ author: "Yashwanth Rathakrishnan"
 ShowToc: true
 TocOpen: true 
 ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowCodeCopyButtons: true
 cover:
     image: "posts/2026/conference/devconf-india/img/cover-devconfin-2026.jpg"
     alt: "DevConf India 2026 - Fedora Project Community Corner Booth"
@@ -19,7 +17,7 @@ cover:
 I left home at 15:30 on February 12, 2026. I took two buses, the first from my village to the nearest town for public transport to Coimbatore Airport (CJB). Boarding for the Pune flight started at 19:30, but I reached the airport at 19:00 and grabbed something to eat for the long ride.
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/onboardin-flight.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/onboardin-flight.jpg" 
   title="Finally, the ride arrived!" 
   caption="Coimbatore (CJB) to Pune (PNQ)" 
   alt="Onboarding Flight to Pune" 
@@ -35,7 +33,7 @@ I woke up at 06:00 and got ready for MIT WPU College, where DevConf India was ha
 
 ## At DevConf
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/devconf-welcome.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/devconf-welcome.jpg" 
   title="DevConf India 2026" 
   caption="After a 10-minute walk, we found the DevConf venue!" 
   alt="DevConf India 2026 Venue Entrance" 
@@ -50,7 +48,7 @@ I also shared about my contributions to [Fedora’s Forgejo](http://forge.fedora
 
 ## Setting Up The Booth
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/samyak-setting-up-booth.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/samyak-setting-up-booth.jpg" 
   title="Samyak setting up the Fedora Project booth" 
   caption="We used the laptop to showcase Fedora Linux Workstation for people interested in our distro, showed available flavors, and placed a tablet for quiz registration." 
   alt="Booth Setup by Samyak Jain" 
@@ -60,7 +58,7 @@ I also shared about my contributions to [Fedora’s Forgejo](http://forge.fedora
 After some time, [Akashdeep](https://fedoraproject.org/wiki/User:T0xic0der) called me to help lay out the booth. I came down and saw [Samyak Jain](https://fedoraproject.org/wiki/User:Jnsamyak) already setting up our **Fedora Project Community Corner Booth**. We caught up, sat for a couple of minutes, then headed to the top floor for the opening note.
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/opening-note.gif" 
+  src="/fedora/posts/2026/conference/devconf-india/img/opening-note.gif" 
   title="Opening Note on the top floor with around 2000 people" 
   caption="DevConf India was in the Vyas building, a massive place that made it perfect for this year’s event." 
   alt="Opening Note at DevConf" 
@@ -73,7 +71,7 @@ We stood there for a few minutes, taking pictures and videos, checking out the h
 
 ## Lots of visitors at the Fedora Project booth!
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/busy-at-booth.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/busy-at-booth.jpg" 
   title="Talking with Visitors at Our Fedora Booth !" 
   caption="The Fedora booth at DevConf India 2026 was super busy on Day 1, I chatted with hundreds of curious visitors about Fedora Linux and Project, shared my contributor journey, fixed gaming issues, and more." 
   alt="Fedora folks busy at the booth" 
@@ -102,7 +100,7 @@ The funniest thing was people kept coming to our booth thinking it was registrat
 
 ## Giveaway Time
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/giveaway-day1.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/giveaway-day1.jpg" 
   title="Surprise Giveaway!" 
   caption="Using the wheel of names for those who scored 12/12 on Day 1 to select the winners!" 
   alt="Giveaway time day 1" 
@@ -113,7 +111,7 @@ One cool thing was we gave swag to people who scored high on our quiz, picking 4
 
 ## Dinner at Wasabi
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/dinner-wasabi.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/dinner-wasabi.jpg" 
   title="Dinner at Wasabi, Viman Nagar, Pune" 
   caption="First time trying Japanese, Vietnamese, and Chinese food at Wasabi 15. The food was great." 
   alt="Dinner at Wasabi 15" 
@@ -136,7 +134,7 @@ It was Day 2 of DevConf, and I woke up at 07:00. I took a shower and started loo
 
 ## At DevConf
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/day2.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/day2.jpg" 
   title="Matthew Miller preparing for his talk" 
   caption="Everyone was running late, but Matthew Miller arrived early and was waiting at the booth while preparing for his talk on 30 Fedora Releases in 30 Minutes." 
   alt="Matthew Miller at the booth" 
@@ -146,7 +144,7 @@ It was Day 2 of DevConf, and I woke up at 07:00. I took a shower and started loo
 [Matthew Miller](https://docs.fedoraproject.org/en-US/council/fpl/) was at the booth preparing for his talk "30 Fedora Releases in 30 Minutes." I greeted him, then started checking out other booths. Again on Day 2, we thought we were late, but we were actually early. Most booths weren’t set up yet, and the Fedora Project booth was one of the first open. Lots of people came to talk with [Matthew Miller](https://docs.fedoraproject.org/en-US/council/fpl/).
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/breakfast-day2.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/breakfast-day2.jpg" 
   title="Poha with Methu Vadai" 
   caption="The food in Pune felt so similar to Tamil Nadu. I was comfortable eating it, just like at home." 
   alt="Breakfast at DevConf Venue" 
@@ -161,7 +159,7 @@ I got back to our booth after finishing breakfast at 11:00. We started getting m
 Visitor numbers dipped slightly from Day 1 but not much, around 1100-1300 total over two days. Day 2 still drew young, curious folks wanting to join Fedora. Plus, with [Matthew Miller](https://docs.fedoraproject.org/en-US/council/fpl/) at the booth, many came to chat and take photos with him.
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/note.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/note.jpg" 
   title="Just a fun way to attract people nearby XD" 
   caption="So many people came to our booth for DevConf registration. We kept telling them it wasn’t the registration desk, they had to go to the end of the hall. It was fun, we even attracted a few who came just to read and laugh at the note XD" 
   alt="A note saying Fedora Project booth is not DevConf registration desk." 
@@ -176,7 +174,7 @@ After some time, a few people came asking for registration. It was funny, they k
 
 ## Checking Out Other Booths
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/booth-visit.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/booth-visit.jpg" 
   title="Visited FOSS United, OKD, Elastic Search, Tekton, Argo CI/CD, Foreman, and Kubeflow" 
   caption="Shounak and I visited some booths before realizing Matthew’s talk would start in a few minutes, so we returned to wrap up temporarily and attend." 
   alt="Booth visits on Day 2" 
@@ -201,7 +199,7 @@ None of us had time to attend talks on either day or check out other booths yet.
 
 ## Matthew's Talk
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/matthew-talk.gif" 
+  src="/fedora/posts/2026/conference/devconf-india/img/matthew-talk.gif" 
   title="30 Fedora Releases in 30 Minutes, Matthew Miller" 
   caption="The title says it all. Matthew talked about Fedora Linux, its history, the major changes in each release, the naming conventions, and more. The room was full, with people from Red Hat, colleges, and the community. I was glad to learn the history of Fedora Linux, the system I use as my daily driver." 
   alt="30 Fedora Releases in 30 Minutes" 
@@ -224,7 +222,7 @@ My first Fedora Linux was Fedora 38, and we're now at Fedora 43 (with 44 coming 
 
 ## Giveaway Time
 <!-- {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/giveaway-day2.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/giveaway-day2.jpg" 
   title="Surprise Giveaway!" 
   caption="Using the wheel of names for those who scored 14/14 on Day 2 to select the winners!" 
   alt="Giveaway time day 2" 
@@ -238,7 +236,7 @@ In total, we got around 120 quiz responses over two days.
 
 ## Lunch at La Sicilia
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/lunch-day2.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/lunch-day2.jpg" 
   title="Lunch at La Sicilia Bistro and Patisserie, Kothrud, Pune" 
   caption="Lunch with Akashdeep, Shounak, Samyak, and Avadooth" 
   alt="Lunch at La Sicilia Bistro and Patisserie, Kothrud, Pune with Fedora Folks" 
@@ -253,7 +251,7 @@ We wrapped up our booth by 15:30. [Akashdeep](https://fedoraproject.org/wiki/Use
 
 ## Dinner at Ishaara
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/dinner-day2.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/dinner-day2.jpg" 
   title="Dinner at Ishaara, Wakad, Pune" 
   caption="Dinner with Sudhir, Shounak & Akashdeep" 
   alt="30 Fedora Releases in 30 Minutes" 
@@ -269,7 +267,7 @@ A couple of minutes later, [Akashdeep](https://fedoraproject.org/wiki/User:T0xic
 I finally reached the location, but the restaurant was inside the mall. I spent around 10 minutes looking for it until [Shounak](https://fedoraproject.org/wiki/User:Sdglitched) helped by giving me a landmark. After that, I found the restaurant and met [Sudhir](https://www.linkedin.com/in/sudhir-dharanendraiah-80a0867), [Akashdeep](https://fedoraproject.org/wiki/User:T0xic0der), and [Shounak](https://fedoraproject.org/wiki/User:Sdglitched). I had met [Sudhir](https://www.linkedin.com/in/sudhir-dharanendraiah-80a0867) at last year’s DevConf India, so I already knew him, but I don't know if he remembers me at all XD. He asked what I’m currently doing in the Fedora Project. We had a nice chat for a while, and after some time of talking and eating, [Sudhir](https://www.linkedin.com/in/sudhir-dharanendraiah-80a0867) left. Then it was just [Akashdeep](https://fedoraproject.org/wiki/User:T0xic0der), [Shounak](https://fedoraproject.org/wiki/User:Sdglitched), and me. I was already full from lunch that day, so I couldn’t eat much.
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/sendoff.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/sendoff.jpg" 
   title="Saying Goodbyes o/" 
   caption="That's a wrap for Day 2 of DevConf India 2026" 
   alt="30 Fedora Releases in 30 Minutes" 
@@ -289,7 +287,7 @@ He was super supportive, answered everything clearly, and gave great advice. Aft
 
 ## Waiting at the Pune Airport
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/pnq-entrance.gif" 
+  src="/fedora/posts/2026/conference/devconf-india/img/pnq-entrance.gif" 
   title="Waiting at the entrance of Pune Airport" 
   caption="Couldn’t get into the airport since my flight was arriving at 4 AM, and I was too early at 11 PM." 
   alt="Waiting at PNQ" 
@@ -299,7 +297,7 @@ He was super supportive, answered everything clearly, and gave great advice. Aft
 Apparently, passengers can’t enter the airport unless their flight is within 4 hours. I arrived at the airport too early at 23:00 on the 14th, and my flight was at 04:00 on the 15th. There was no place to sit nearby, so I was just sitting on a stone wall on the way to Aero Mall. An auto driver saw me and told me to go to Aero Mall to rest. He was a good guy, without his advice, I would have sat there for hours.
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/aeromall.gif" 
+  src="/fedora/posts/2026/conference/devconf-india/img/aeromall.gif" 
   title="Resting in Aeromall" 
   caption="I bought a Red Bull to stay awake and rested there for 4 hours." 
   alt="Resting in Aeromall with a Red Bull in my hand!" 
@@ -312,7 +310,7 @@ I made my way to Aero Mall, found a good spot to sit, bought a Red Bull to stay 
 ## Flying Back to Coimbatore
 
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/boarding-CJB.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/boarding-CJB.jpg" 
   title="Boarding Flight to Coimbatore (CJB)" 
   caption="After hours of waiting, I'm finally onboard!" 
   alt="Onboarding Flight" 
@@ -326,7 +324,7 @@ I straight-up said no since I paid for the window seat and wouldn’t switch unl
 
 ## Returning to my Home
 {{< figure 
-  src="/fedora/posts/conference/devconf-india/img/CJB.jpg" 
+  src="/fedora/posts/2026/conference/devconf-india/img/CJB.jpg" 
   title="Reached Coimbatore!" 
   caption="Landed at Coimbatore airport at 05:55, walked quickly to the nearest bus stop, caught a bus to my hometown at 06:10, and finally **reached home safe and sound at 08:45**." 
   alt="Returning Home from Coimbatore" 
