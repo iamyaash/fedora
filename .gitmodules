@@ -3,7 +3,7 @@
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "themes/PaperModPlus"]
 	path = themes/PaperModPlus
-	url = https://codeberg.org/dovah-kiin/PaperModPlus.git
+	url = https://codeberg.org/clforge/PaperModPlus.git
 [submodule "scripts"]
 	path = scripts
 	url = https://codeberg.org/clforge/hugo-scripts.git
