@@ -1,8 +1,9 @@
-baseURL: https://iamyaash.github.io/fedora/
+baseURL: https://yaasharc.me/fedora/
 languageCode: en-us
 title: Fedora
 theme: ["PaperModPlus"]
 params:
+  footerName: "Yashwanth Rathakrishnan"
   ShowCodeCopyButtons: true
   homeInfoParams:
     Title: Hello there 👀!
