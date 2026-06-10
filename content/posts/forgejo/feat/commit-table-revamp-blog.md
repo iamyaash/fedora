@@ -2,6 +2,7 @@
 date: '2026-06-09T19:43:08+05:30'
 draft: false
 title: "Forgejo's New Commit Page Design Is Here"
+summary: "This blog covers the complete redesign of Forgejo's commit page to fix mobile issues and improve usability, sharing the design process, bugs fixed, skills learned, and community collaboration that made it possible."
 author: "Yashwanth Rathakrishnan"
 ShowToc: true
 TocOpen: true 
